@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/</loc>
+    <loc>http://localhost:1313/NotesWebsite/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/about/</loc>
+    <loc>http://localhost:1313/NotesWebsite/about/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/kr/boolean-algebra-and-propositional-logic/</loc>
+    <loc>http://localhost:1313/NotesWebsite/kr/boolean-algebra-and-propositional-logic/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/calculus/</loc>
+    <loc>http://localhost:1313/NotesWebsite/calculus/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/computational-logic/</loc>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</loc>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/computer-programming/</loc>
+    <loc>http://localhost:1313/NotesWebsite/computer-programming/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/kr/history-of-kr/</loc>
+    <loc>http://localhost:1313/NotesWebsite/kr/history-of-kr/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/computer-programming/books/</loc>
+    <loc>http://localhost:1313/NotesWebsite/computer-programming/books/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/kr/</loc>
+    <loc>http://localhost:1313/NotesWebsite/kr/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/kr/logic/</loc>
+    <loc>http://localhost:1313/NotesWebsite/kr/logic/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/kr/logic-and-symbolic-ai/</loc>
+    <loc>http://localhost:1313/NotesWebsite/kr/logic-and-symbolic-ai/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/physics/measures-introduction-to-data-and-error-analysis/</loc>
+    <loc>http://localhost:1313/NotesWebsite/physics/measures-introduction-to-data-and-error-analysis/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/physics/</loc>
+    <loc>http://localhost:1313/NotesWebsite/physics/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/kr/representing-knowledge-as-rules/</loc>
+    <loc>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/calculus/some-definitions/</loc>
+    <loc>http://localhost:1313/NotesWebsite/calculus/some-definitions/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/categories/</loc>
+    <loc>http://localhost:1313/NotesWebsite/categories/</loc>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/series/</loc>
+    <loc>http://localhost:1313/NotesWebsite/series/</loc>
   </url><url>
-    <loc>https://xn--9r9ha.uz/NotesWebsite/tags/</loc>
+    <loc>http://localhost:1313/NotesWebsite/tags/</loc>
   </url>
 </urlset>
