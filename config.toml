@@ -1,7 +1,7 @@
 baseURL = "https://xn--9r9ha.uz/NotesWebsite"
 pluralizeListTitles = false
 math = "true"
-theme = "risotto"
+theme = "risottoF"
 title = "My Notes"
 author = "🥧"
 paginate = 3
