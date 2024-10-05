@@ -15,12 +15,5 @@
       <guid>//localhost:1313/computer-programming/books/</guid>
       <description>&lt;h1 id=&#34;history-of-computing-machines&#34;&gt;History of Computing Machines&lt;/h1&gt;&#xA;&lt;h3 id=&#34;pascaline&#34;&gt;Pascaline&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Digital, Non programmable machine based on gears&lt;/li&gt;&#xA;&lt;li&gt;Able to do simple operations like Addition and Subtraction&lt;/li&gt;&#xA;&lt;li&gt;Computations based on the discrete positions of the gears&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;differential-engine&#34;&gt;Differential Engine&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Digital, non programmable machine based on an Engine &lt;code&gt;who would have guessed&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Able to compute polynomial approximations through the compute of tables&lt;/li&gt;&#xA;&lt;li&gt;Evolved into the Analytical Engine, which was General purpose programmable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;z1&#34;&gt;Z1&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Digital, Partially programmable machine&lt;/li&gt;&#xA;&lt;li&gt;Able to compute the 4 basic operations (`division was doing trough looping)&lt;/li&gt;&#xA;&lt;li&gt;Later evolved into the Z3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tr-48&#34;&gt;TR-48&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Analog, programmable computer based on transistors&lt;/li&gt;&#xA;&lt;li&gt;Used for simulation and process control&lt;/li&gt;&#xA;&lt;li&gt;Faster than Digital solutions of its time&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;von-neumann-architecture&#34;&gt;Von Neumann architecture&lt;/h1&gt;&#xA;&lt;p&gt;Most current computers are built on this&#xA;Programs and data are stored as numbers in memory&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Some Notes</title>
-      <link>//localhost:1313/computer-programming/notes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>//localhost:1313/computer-programming/notes/</guid>
-      <description>&lt;p&gt;SSSS&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

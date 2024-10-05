@@ -43,12 +43,5 @@
       <guid>//localhost:1313/kr/representing-knowledge-as-rules/</guid>
       <description>&lt;p&gt;also see [[Boolean Algebra and Propositional Logic]]&lt;/p&gt;&#xA;&lt;h1 id=&#34;clauses&#34;&gt;Clauses&lt;/h1&gt;&#xA;&lt;p&gt;a clause is a ==disjunction== of literals &lt;code&gt;(variables or negated variables)&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;some clauses&#xA;$$ x \vee y \vee \neg z $$&#xA;$$ \neg x \vee \neg y $$&lt;/p&gt;&#xA;&lt;h2 id=&#34;horn-clause&#34;&gt;Horn Clause&lt;/h2&gt;&#xA;&lt;p&gt;A Horn clause has at most 1 positive literal&lt;/p&gt;&#xA;&lt;p&gt;$x$&#xA;$x \vee \neg y \vee \neg z$&lt;/p&gt;&#xA;&lt;p&gt;We will represent Horn clauses in a different way&#xA;$(x_1 \wedge x_2 \wedge &amp;hellip; \wedge X_n) \rightarrow y$&#xA;Meaning if all X&amp;rsquo;s are true, then y must be true as well&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Some Notes</title>
-      <link>//localhost:1313/kr/notes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>//localhost:1313/kr/notes/</guid>
-      <description>&lt;p&gt;SSSS&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
