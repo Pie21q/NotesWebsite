@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Computational Logic, from SAT to SMT &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="//localhost:1313/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="//localhost:1313/css/risotto.css">
+<link rel="stylesheet" href="//localhost:1313/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="//localhost:1313/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="//localhost:1313/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Computational Logic, from SAT to SMT</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="propositional-logic">Propositional Logic</h2>
+<p>Refer to the KR notes on the same topic</p>
+<p>Remember that
+$$\rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if$$
+Some expressions make perfect sense, like
+$$(p\vee q) \rightarrow r$$
+<code>If it rains (p) or it snows (q), then i will take an umbrella (r)</code></p>
+<p>while others are meaningless
+$$pq)) \rightarrow r$$</p>
+<h2 id="formula">Formula</h2>
+<p>A formula is a string of characters which follows the following rules
+$$ Every \space p \in L \space is \ a \ formula \ (rule \ n1)  $$$$  if \ all \ A,B&rsquo;s \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)   $$
+we can also create a tree from the main formula, where the nodes are built using rule 2 and the last elements using rule 1</p>
+<p>Some conventions are used to eliminate some brackets</p>
+<p>$$  a*b=c, \ product \ is \ stronger \ than \ sum   $$
+in the same way, in computational logic
+$$  \neg \ is \ stronger \ than \wedge \vee, and \ they&rsquo;re \ stronger \ than \ \rightarrow   $$</p>
+<blockquote>
+<p>for example
+$$ ((\neg p) \rightarrow (q \vee r)) = \neg p \rightarrow q \vee r $$</p>
+</blockquote>
+<h3 id="how-to-compute-implication">How to compute implication</h3>
+<p>Implication&rsquo;s more problematic, as in natural languages <code>such as english</code>, implications can have different meanings.
+In Logic this couldn&rsquo;t work, so implication takes a meaning similar to the one present in Computer science</p>
+<p>==The only way i can falsify an implication is making the antecedent true and the other true</p>
+<p>$$  A \rightarrow B \ can  \ be \ false \ exclusively \ when  \ A  \ is \ false   $$</p>
+<p>we can define implication as
+$$ V(\neg A \vee B) = V(\neg(A \vee \neg B)) $$</p>
+<p>also
+$$ A \leftrightarrow B \equiv (A \rightarrow B) \wedge (B \rightarrow A)$$</p>
+<p>$$ \neg \neg \neg \neg \neg p = \neg p$$</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-10-05
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>Measures, Introduction to Data and Error Analysis &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="//localhost:1313/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="//localhost:1313/css/risotto.css">
+<link rel="stylesheet" href="//localhost:1313/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="//localhost:1313/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="//localhost:1313/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="//localhost:1313/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Measures, Introduction to Data and Error Analysis</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="error-analysis">Error Analysis</h2>
+<ul>
+<li>Calculate the mean between the different measures</li>
+<li>Calculate the residuals X<sub>n</sub> - Mean of X&rsquo;s <code>the sum of the residuals should approximate to 0, but its not a very good rapresentation</code></li>
+<li>Calculate the standard deviation <code>Rapresentation of how much the data deviates from the Mean value</code></li>
+</ul>
+<p>Standard deviation Formula
+$$ S_x = \sqrt \frac{\sum^n_{i=1} (X_i - \bar x)^2}{n-1}$$</p>
+<h2 id="representing-data">Representing Data</h2>
+<ul>
+<li>Tables <code>not very efficient nor readable</code></li>
+<li>Histograms <code>Graphical rapresentation of Data, Easier to compare</code></li>
+</ul>
+<blockquote>
+<p>Normalized Histograms are used to represent the frequency of every measure, <code>The data is averaged in Bins, which range from 2 values</code></p>
+</blockquote>
+<p>As the number of measurements approaches infinity, and the size of the bins approaches 0, the Histogram approaches a curve, called ==Limiting Distribution== <code>In the case of limited, small errors they become negligible, and the Histogram approaches a curve known as Normal distribution or Gaussian Function</code></p>
+<p>[<img src="https://www.scribbr.de/wp-content/uploads/2023/01/standard-normal-distribution-example.webp" alt="Normal Distribution | Examples, Formulas, &amp; Uses"></p>
+<p>$$ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^(-\frac{1}{2}(\frac{x-\mu}\sigma)$$</p>
+<p>==We can also calculate the error on the mean value using the formula below</p>
+<p>$$\sigma_\bar{x} = \frac{\sigma_x}{\sqrt{N}} $$</p>
+<blockquote>
+<p>__Always keep in minds that errors aren&rsquo;t necessarily mistakes, but uncertainties in the measures</p>
+</blockquote>
+<h2 id="absolute-errors-vs-relative-errors">Absolute Errors Vs Relative Errors</h2>
+<ul>
+<li>Absolute errors is the same and doesn&rsquo;t depend on the measure we&rsquo;re taking <code>0,003m of errors while measuring the Earth's circunference is very good, the same error on hair thickness doesn't really make sense</code></li>
+<li>The error shouldn&rsquo;t have more significant digits than the mean value, While at the same time a mean value with more significant value should be rounded up to the same as the error</li>
+</ul>
+<h2 id="error-propagation">Error Propagation</h2>
+<p>Taking 2 different measures in the lab and combining them will lead to a third value with a different error than the other two</p>
+<blockquote>
+<p>`For example we could find the new error by summing (in case our first operation was sum) the 2 errors on the 2 measurements, but that&rsquo;s could lead to over-estimation of the final error</p>
+</blockquote>
+<p>There are 2 different formulas</p>
+<p>Addition
+$$value= \bar{z} + \bar{x} = \bar{y}, \space\space uncertainty = \sigma_x = \sqrt{(\sigma_x)^2 +(\sigma_y)^2}$$
+Multiplication
+$$value= \bar{z} * \bar{x} = \bar{y}, \space\space uncertainty = \sigma_x = \sqrt{(\frac{\sigma_x}{\bar{x}})^2 +(\frac{\sigma_y}{\bar{y}})^2}$$</p>
+<p><code>A generic formula using derivatives is also available</code></p>
+<p>Special Cases</p>
+<ul>
+<li>In case of a measure times  a constant you just multiply the measure by the constant</li>
+</ul>
+<h2 id="systematic-errors">Systematic Errors</h2>
+<p>Type of error dependent on the tool we use to measure and not on our measuring technique <code>eg. a ruler which has wrong markings</code></p>
+<h2 id="error-compatibility">Error Compatibility</h2>
+<p>we can measure the compatibility between 2 errors by measuring the discrepancy</p>
+<h2 id="weighted-average">Weighted Average</h2>
+<p>Allows us to combine different measures with different values of precision</p>
+<blockquote>
+<p>`Combining averages taken in 2 differents labs, possibly with 2 different methods can reduce not only measure errors but also systematic ones</p>
+</blockquote>
+<p>first we calculate weight</p>
+<p>$$w = \frac{1}{\sigma^2}$$</p>
+<p>We can them combine the two weighted measurements in a weighted average usng
+$$x_{w.a.}= \frac{w_ax_a+w_bx_b}{w_a+w_b}$$
+at last we can measure the new, <code>propagated</code>, error by using
+$$\sigma_{w.a.}= \frac{1}{\sqrt{w_a+w_b}}$$</p>
+<h2 id="values-relationships">Values relationships</h2>
+<p>Being given a set of points on a graph</p>
+<ul>
+<li>We need to find a line which best suits our dataset <code>We can do that by using the method of the least squares, helping us to find the best values of A and B for y=Ax + B</code></li>
+<li>After finding the parameters we can calculate the error present in the parameters we found</li>
+</ul>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-10-05
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
