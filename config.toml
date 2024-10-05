@@ -1,4 +1,4 @@
-baseURL = "https://google"
+
 pluralizeListTitles = false
 math = "true"
 theme = "risotto"
