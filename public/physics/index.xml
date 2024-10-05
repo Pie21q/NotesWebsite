@@ -2,25 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Physics on My Notes</title>
-    <link>//localhost:1313/physics/</link>
+    <link>/physics/</link>
     <description>Recent content in Physics on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 05 Oct 2024 12:08:51 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/physics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Measures, Introduction to Data and Error Analysis</title>
-      <link>//localhost:1313/physics/measures-introduction-to-data-and-error-analysis/</link>
+      <link>/physics/measures-introduction-to-data-and-error-analysis/</link>
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>//localhost:1313/physics/measures-introduction-to-data-and-error-analysis/</guid>
+      <guid>/physics/measures-introduction-to-data-and-error-analysis/</guid>
       <description>&lt;h2 id=&#34;error-analysis&#34;&gt;Error Analysis&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Calculate the mean between the different measures&lt;/li&gt;&#xA;&lt;li&gt;Calculate the residuals X&lt;sub&gt;n&lt;/sub&gt; - Mean of X&amp;rsquo;s &lt;code&gt;the sum of the residuals should approximate to 0, but its not a very good rapresentation&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Calculate the standard deviation &lt;code&gt;Rapresentation of how much the data deviates from the Mean value&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Standard deviation Formula&#xA;$$ S_x = \sqrt \frac{\sum^n_{i=1} (X_i - \bar x)^2}{n-1}$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;representing-data&#34;&gt;Representing Data&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tables &lt;code&gt;not very efficient nor readable&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Histograms &lt;code&gt;Graphical rapresentation of Data, Easier to compare&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Normalized Histograms are used to represent the frequency of every measure, &lt;code&gt;The data is averaged in Bins, which range from 2 values&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Some Notes</title>
-      <link>//localhost:1313/physics/physicsnotes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>//localhost:1313/physics/physicsnotes/</guid>
-      <description>&lt;p&gt;Some Physics notes in Markdown&lt;/p&gt;&#xA;&lt;h2 id=&#34;im-a-header&#34;&gt;Im a Header&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>

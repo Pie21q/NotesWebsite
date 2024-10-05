@@ -2,37 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/physics/boolean-algebra-and-propositional-logic/</loc>
+    <loc>/kr/boolean-algebra-and-propositional-logic/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/calculus/</loc>
+    <loc>/calculus/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/computational-logic/</loc>
+    <loc>/computational-logic/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/physics/</loc>
+    <loc>/computational-logic/computational-logic-from-sat-to-smt/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/calculus/notes/</loc>
+    <loc>/computer-programming/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/computational-logic/notes/</loc>
+    <loc>/kr/history-of-kr/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/physics/physicsnotes/</loc>
+    <loc>/computer-programming/books/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/kr/</loc>
+    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/</loc>
+    <loc>/kr/logic/</loc>
+    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/kr/logic-and-symbolic-ai/</loc>
+    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
+  </url><url>
+    <loc>/physics/measures-introduction-to-data-and-error-analysis/</loc>
+    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
+  </url><url>
+    <loc>/physics/</loc>
+    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
+  </url><url>
+    <loc>/kr/representing-knowledge-as-rules/</loc>
+    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
+  </url><url>
+    <loc>/calculus/some-definitions/</loc>
+    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/series/</loc>
+  </url><url>
+    <loc>/tags/</loc>
   </url>
 </urlset>
