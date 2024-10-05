@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computational Logic on My Notes</title>
-    <link>http://localhost:1313/NotesWebsite/computational-logic/</link>
+    <link>https://xn--9r9ha.uz/NotesWebsite/computational-logic/</link>
     <description>Recent content in Computational Logic on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 05 Oct 2024 12:08:51 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/NotesWebsite/computational-logic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xn--9r9ha.uz/NotesWebsite/computational-logic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computational Logic, from SAT to SMT</title>
-      <link>http://localhost:1313/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</link>
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</guid>
       <description>&lt;h2 id=&#34;propositional-logic&#34;&gt;Propositional Logic&lt;/h2&gt;&#xA;&lt;p&gt;Refer to the KR notes on the same topic&lt;/p&gt;&#xA;&lt;p&gt;Remember that&#xA;$$\rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if$$&#xA;Some expressions make perfect sense, like&#xA;$$(p\vee q) \rightarrow r$$&#xA;&lt;code&gt;If it rains (p) or it snows (q), then i will take an umbrella (r)&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;while others are meaningless&#xA;$$pq)) \rightarrow r$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;formula&#34;&gt;Formula&lt;/h2&gt;&#xA;&lt;p&gt;A formula is a string of characters which follows the following rules&#xA;$$ Every \space p \in L \space is \ a \ formula \ (rule \ n1)  $$$$  if \ all \ A,B&amp;rsquo;s \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)   $$&#xA;we can also create a tree from the main formula, where the nodes are built using rule 2 and the last elements using rule 1&lt;/p&gt;</description>
     </item>
   </channel>
