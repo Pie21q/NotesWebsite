@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/NotesWebsite/</loc>
-    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
+    <lastmod>2024-10-07T12:08:51+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/kr/</loc>
+    <lastmod>2024-10-07T12:08:51+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/about/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
@@ -29,9 +32,6 @@
     <loc>http://localhost:1313/NotesWebsite/computer-programming/books/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/NotesWebsite/kr/</loc>
-    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/NotesWebsite/kr/logic/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
@@ -42,9 +42,6 @@
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/physics/</loc>
-    <lastmod>2024-10-05T12:08:51+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/calculus/some-definitions/</loc>

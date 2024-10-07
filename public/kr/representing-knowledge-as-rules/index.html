@@ -95,25 +95,76 @@ Meaning if all X&rsquo;s are true, then y must be true as well</p>
 $$ X = X \vee \bot = x \vee \neg \top $$
 which becomes
 $$ T \rightarrow x $$
-Meaning if true is true, x must be true, so ==x must be true==</p>
+Meaning if true is true, x must be true, so <code>x must be true</code></p>
 <h2 id="non-definite-horn-clauses">Non definite Horn clauses</h2>
 <p>Horn clauses lacking the positive literal
 $$ \neg x_1 \vee \neg x_2 $$</p>
 <h1 id="knowledge-representation">Knowledge Representation</h1>
-<p>Based on what has been said above, a ==Knowledge Base== is a finite set of rules
+<p>Based on what has been said above, a <code>Knowledge Base</code> is a finite set of rules
 for example
 $$ Platypus \leftarrow Monotreme, Venomous, DuckBilled $$
 An individual which is a Monotreme, Venomous and DuckBilled is necessarily a Platypus</p>
 <p>$$ Monotreme \leftarrow Mammal, Oviparous $$
 An individual which is both Mammal and Oviparous must be a Monotreme</p>
-<p>==Being Knowledge, we consider all rules to be true==</p>
+<p><code>Being Knowledge, we consider all rules to be true</code></p>
 <p>Considering that a Knowledge Base is a set of formulas such as
 $$ x_1, &hellip;, x_m $$
 and we believe them to be true, then we believe that
 $$ x_1 \wedge &hellip; \wedge x_m \space is \space true $$
 we can then say Y is a consequence of this and Y is a Tautology</p>
 <p>`All of this is abit complex so we will use a simpler notation</p>
-<p>$$ K \models Y $$</p>
+<p>$K \models \phi$, Meaning that K entails $\phi$</p>
+<h2 id="unit-resolution">Unit Resolution</h2>
+<p>In case of rules, this is called <code>Truth propagation</code></p>
+<p>$y \leftarrow X_1, . . ., X_2$  means if all conditions are true, then y is also true</p>
+<p>To guarantee that y is true, $X_i (1 \le i \le n)$ need to be true</p>
+<p>$y \leftarrow X_1, . . .,X_{i-1}, X_i, X_{i+1} X_n$ , We already know that $X_i$ is true so we can ignore it in the body of the first rule <code>We only care about the truth value of the remaining variable</code></p>
+<h2 id="fact-extraction-algorithm">Fact Extraction Algorithm</h2>
+<p>Input: a KB K <code>A KB is just a set of horn clauses</code>
+Output: All the true facts given K</p>
+<pre tabindex="0"><code>While 
+	there is a fact x and a rule with x in the body do remove x from the body of all rules
+return
+	all facts in K
+</code></pre><p>The KB without facts in the body is called <strong>Redux</strong></p>
+<p>for example
+$y \leftarrow x, z ,w$
+$z \leftarrow$
+$w \leftarrow$</p>
+<p>Our algorithm can remove both z and w from all equations since they&rsquo;re facts
+The <code>Redux</code> of this KB becomes
+$y \leftarrow x$
+$z \leftarrow$
+$w \leftarrow$</p>
+<p>Keep in mind that Unit resolution is <code>sound</code>, meaning it only returns consequences  <code>(No false positives)</code>, meaning</p>
+<p>if $\nu$ is a valuation such that $\nu(y \leftarrow X_1, &hellip;, X_n)=1 = \nu(x_i \leftarrow)$ then $\nu(y \leftarrow X_1,X_{i-1}, &hellip;,X_{i+1}, X_n) = 1$</p>
+<p>From the top set of equation we know that $X_i$ has to be <code>true</code>,
+Also, this means that $K \rightarrow \hat{K}$ Is a Tautology
+Also, $K \rightarrow x$ is a tautology if x is a fact in $\hat{K}$</p>
+<p>Is a KB complete? (<code>Does it return all consequences of K?</code>)</p>
+<blockquote>
+<p>No, it only returns <strong>Facts</strong> entailed by K</p>
+</blockquote>
+<p>A rule such as  $\leftarrow$ Is a contradiction ($\bot$), Meaning the knowledge base itself is contradictory as it is `Impossible to satisfy</p>
+<p>We can rewrite  $\leftarrow \ as \ \top \rightarrow \bot$ , Which we evaluate to <code>0</code></p>
+<p>In this case, We can apparently satisfy the KB but not the redux, in this case, the original KB is itself unable to be satisfied <code>(an insatiable KB is known as inconsistent)</code></p>
+<h2 id="consequences-of-inconsistency">Consequences of Inconsistency</h2>
+<p>considering $K \models \phi$ , if there&rsquo;s no evaluation to satisfy K, K is defined as inconsistent, Meaning every formula $\psi$ is a consequence of K and will always be <code>true</code></p>
+<p>If K is consistent, then the process resolution is complete with respect to facts, if $x$ is not a fact i. $\hat{K}$, then it is not a consequence of K</p>
+<p>We are now able to extracts all (<code>but only</code>) the facts entailed by $K$</p>
+<h2 id="complex-entailments">Complex entailments</h2>
+<p>In the case of $K \models y \leftarrow X_1, . . . , X_2$, a fact extraction algorithm won&rsquo;t be able to return a fact.
+This case is known as a <code>Complex entailment</code>, meaning &ldquo;If  all $X_n$ &rsquo;s are true, then y is also true&rdquo;
+In this case, the only relevant valuations are the ones which satisfy K and make all $X_n$ <code>true</code></p>
+<p>To solve this we have to verify $K \wedge \bigwedge^n_{i=1} X_i \models y$ , Meaning we add all $X_i$ as implications to the knowledge base temporarily, such that $\ \leftarrow X_i$ , and then we study the consequences of the new implications</p>
+<h2 id="computational-complexity">Computational Complexity</h2>
+<p>With the term <code>Computational Complexity</code> we refer to the number of operations needed to find the consequences <code>How long will it take us to find the answer</code></p>
+<p>The number of steps needed is equal to $n * m \ steps$ , where K has n rules and m variables</p>
+<h2 id="properties-of-rules">Properties of Rules</h2>
+<p>Rules are used to define a simple KR language, which is useful to express basic properties</p>
+<p>For example, the expression &ldquo;Fathers are male parents&rdquo;, becomes
+$father \leftarrow male, parent$, while the expression &ldquo;monotremata are egg-laying mammals becomes $monotreme \leftarrow mammal, oviparous$&rdquo;
+This language is limited by it&rsquo;s <code>inexpressivity</code>, as you cant express relationships between object <code>(If we are talking about parents, we arent able to discern between grandparents, uncles or siblings)</code>, as to do this we need to use <strong>Predicate Logic</strong></p>
 
     </div>
     <footer class="content__footer"></footer>
