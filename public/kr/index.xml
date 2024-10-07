@@ -6,8 +6,15 @@
     <description>Recent content in KR on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Oct 2024 12:08:51 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/kr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Representing Knowledge as Rules</title>
+      <link>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</guid>
+      <description>&lt;p&gt;also see [[Boolean Algebra and Propositional Logic]]&lt;/p&gt;&#xA;&lt;h1 id=&#34;clauses&#34;&gt;Clauses&lt;/h1&gt;&#xA;&lt;p&gt;a clause is a ==disjunction== of literals &lt;code&gt;(variables or negated variables)&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;some clauses&#xA;$$ x \vee y \vee \neg z $$&#xA;$$ \neg x \vee \neg y $$&lt;/p&gt;&#xA;&lt;h2 id=&#34;horn-clause&#34;&gt;Horn Clause&lt;/h2&gt;&#xA;&lt;p&gt;A Horn clause has at most 1 positive literal&lt;/p&gt;&#xA;&lt;p&gt;$x$&#xA;$x \vee \neg y \vee \neg z$&lt;/p&gt;&#xA;&lt;p&gt;We will represent Horn clauses in a different way&#xA;$(x_1 \wedge x_2 \wedge &amp;hellip; \wedge X_n) \rightarrow y$&#xA;Meaning if all X&amp;rsquo;s are true, then y must be true as well&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Boolean Algebra and Propositional Logic</title>
       <link>http://localhost:1313/NotesWebsite/kr/boolean-algebra-and-propositional-logic/</link>
@@ -35,13 +42,6 @@
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
       <guid>http://localhost:1313/NotesWebsite/kr/logic-and-symbolic-ai/</guid>
       <description>&lt;h1 id=&#34;intelligence&#34;&gt;Intelligence&lt;/h1&gt;&#xA;&lt;p&gt;AI deals with machines showing intelligent traits, isn&amp;rsquo;t equivalent to humane cognitive attributes&#xA;Humans work on 2 different thought processes; ==system 1 (reflexes, fast and intuitive) and system 2 (Used in thought, slow and more logical, takes effort and time)&lt;/p&gt;&#xA;&lt;p&gt;System 1 is useful for simple task but can be easily fooled (Pareidolia) it&amp;rsquo;s also hard wired and hard to modify it (In AI creation and modification of it can be very expensive as it needs time and repetition to build a strong muscle memory)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Representing Knowledge as Rules</title>
-      <link>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</guid>
-      <description>&lt;p&gt;also see [[Boolean Algebra and Propositional Logic]]&lt;/p&gt;&#xA;&lt;h1 id=&#34;clauses&#34;&gt;Clauses&lt;/h1&gt;&#xA;&lt;p&gt;a clause is a ==disjunction== of literals &lt;code&gt;(variables or negated variables)&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;some clauses&#xA;$$ x \vee y \vee \neg z $$&#xA;$$ \neg x \vee \neg y $$&lt;/p&gt;&#xA;&lt;h2 id=&#34;horn-clause&#34;&gt;Horn Clause&lt;/h2&gt;&#xA;&lt;p&gt;A Horn clause has at most 1 positive literal&lt;/p&gt;&#xA;&lt;p&gt;$x$&#xA;$x \vee \neg y \vee \neg z$&lt;/p&gt;&#xA;&lt;p&gt;We will represent Horn clauses in a different way&#xA;$(x_1 \wedge x_2 \wedge &amp;hellip; \wedge X_n) \rightarrow y$&#xA;Meaning if all X&amp;rsquo;s are true, then y must be true as well&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

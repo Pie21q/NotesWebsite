@@ -1,6 +1,6 @@
 +++
 title = 'Representing Knowledge as Rules'
-date = 2024-10-05T12:08:51+02:00
+date = 2024-10-07
 draft = false
 math = true 
 +++
