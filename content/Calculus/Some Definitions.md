@@ -53,3 +53,6 @@ We can use a different approach based on geometry
 $\tilde{z}$ is new object related to an original object $z$ 
 ### Trigonometric Representation of a Complex number
 $$ z = \mid z \mid (\cos(\theta) +i\sin(\theta)) $$
+
+knowing this, $z^n$ becomes, using `de moivre formula`
+$$z^n = \mid z \mid (\cos n\theta + i\sin n\theta) $$
