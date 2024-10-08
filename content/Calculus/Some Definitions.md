@@ -1,7 +1,7 @@
 +++
 title = 'Some Definitions'
 date = 2024-10-08
-draft = true
+draft = false
 math = true
 +++
 Bounded and unbounded Sets
