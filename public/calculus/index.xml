@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/NotesWebsite/calculus/some-definitions/</guid>
       <description>&lt;p&gt;Bounded and unbounded Sets&#xA;$Q \supseteq A \rightarrow where \ A {2,3}, if \ exists \ a \ number \ such \ that \ 2&amp;lt;r \in Q &amp;lt;3, then \ A \ is \ a \ bounded  \ set$&#xA;Q couldn&amp;rsquo;t be a bounded set as  $Q = {-\infty, +\infty}$&lt;/p&gt;&#xA;&lt;p&gt;A Set can be bounded below, such that  $A = {0, +\infty }$, A Set can also be upwards bounded, such that$A = {-\infty, 2 }$&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Some Notes</title>
-      <link>http://localhost:1313/NotesWebsite/calculus/notes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/calculus/notes/</guid>
-      <description>&lt;p&gt;SSSS&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

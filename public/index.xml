@@ -6,8 +6,15 @@
     <description>Recent content on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exercise 2.2.3</title>
+      <link>http://localhost:1313/NotesWebsite/computer-programming/breakfastex/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/computer-programming/breakfastex/</guid>
+      <description>&lt;p&gt;If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;minutes = 9*60 + 12&#xA;TotalTime = minutes + 2*(8 + 15/60) + 3*(7+ 12/60)&#xA;print(int(TotalTime/60))&#xA;print(TotalTime - (int(TotalTime/60)) *60)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     <item>
       <title>Representing Knowledge as Rules</title>
       <link>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</link>
@@ -77,41 +84,6 @@
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
       <guid>http://localhost:1313/NotesWebsite/calculus/some-definitions/</guid>
       <description>&lt;p&gt;Bounded and unbounded Sets&#xA;$Q \supseteq A \rightarrow where \ A {2,3}, if \ exists \ a \ number \ such \ that \ 2&amp;lt;r \in Q &amp;lt;3, then \ A \ is \ a \ bounded  \ set$&#xA;Q couldn&amp;rsquo;t be a bounded set as  $Q = {-\infty, +\infty}$&lt;/p&gt;&#xA;&lt;p&gt;A Set can be bounded below, such that  $A = {0, +\infty }$, A Set can also be upwards bounded, such that$A = {-\infty, 2 }$&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Some Notes</title>
-      <link>http://localhost:1313/NotesWebsite/calculus/notes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/calculus/notes/</guid>
-      <description>&lt;p&gt;SSSS&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Some Notes</title>
-      <link>http://localhost:1313/NotesWebsite/computational-logic/notes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/computational-logic/notes/</guid>
-      <description>&lt;p&gt;SSSS&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Some Notes</title>
-      <link>http://localhost:1313/NotesWebsite/computer-programming/notes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/computer-programming/notes/</guid>
-      <description>&lt;p&gt;SSSS&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Some Notes</title>
-      <link>http://localhost:1313/NotesWebsite/kr/notes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/kr/notes/</guid>
-      <description>&lt;p&gt;SSSS&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Some Notes</title>
-      <link>http://localhost:1313/NotesWebsite/physics/physicsnotes/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/physics/physicsnotes/</guid>
-      <description>&lt;p&gt;Some Physics notes in Markdown&lt;/p&gt;&#xA;&lt;h2 id=&#34;im-a-header&#34;&gt;Im a Header&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>
