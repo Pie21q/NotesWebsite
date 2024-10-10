@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KR on My Notes</title>
-    <link>http://localhost:1313/NotesWebsite/kr/</link>
+    <link>https://xn--9r9ha.uz/NotesWebsite/kr/</link>
     <description>Recent content in KR on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/NotesWebsite/kr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xn--9r9ha.uz/NotesWebsite/kr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Representing Knowledge as Rules</title>
-      <link>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/kr/representing-knowledge-as-rules/</link>
       <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/kr/representing-knowledge-as-rules/</guid>
       <description>&lt;p&gt;also see [[Boolean Algebra and Propositional Logic]]&lt;/p&gt;&#xA;&lt;h1 id=&#34;clauses&#34;&gt;Clauses&lt;/h1&gt;&#xA;&lt;p&gt;a clause is a ==disjunction== of literals &lt;code&gt;(variables or negated variables)&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;some clauses&#xA;$$ x \vee y \vee \neg z $$&#xA;$$ \neg x \vee \neg y $$&lt;/p&gt;&#xA;&lt;h2 id=&#34;horn-clause&#34;&gt;Horn Clause&lt;/h2&gt;&#xA;&lt;p&gt;A Horn clause has at most 1 positive literal&lt;/p&gt;&#xA;&lt;p&gt;$x$&#xA;$x \vee \neg y \vee \neg z$&lt;/p&gt;&#xA;&lt;p&gt;We will represent Horn clauses in a different way&#xA;$(x_1 \wedge x_2 \wedge &amp;hellip; \wedge X_n) \rightarrow y$&#xA;Meaning if all X&amp;rsquo;s are true, then y must be true as well&lt;/p&gt;</description>
     </item>
     <item>
       <title>Boolean Algebra and Propositional Logic</title>
-      <link>http://localhost:1313/NotesWebsite/kr/boolean-algebra-and-propositional-logic/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/kr/boolean-algebra-and-propositional-logic/</link>
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/kr/boolean-algebra-and-propositional-logic/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/kr/boolean-algebra-and-propositional-logic/</guid>
       <description>&lt;p&gt;Boolean algebra refers to the manipulation of truth values through logical operations.&#xA;We are gonna consider just 2 truth values&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;True &lt;code&gt;1&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;False &lt;code&gt;0&lt;/code&gt;&#xA;and 3 Boolean Operators to manipulate the values&lt;/li&gt;&#xA;&lt;li&gt;Conjunction (∧) &lt;code&gt;And&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Disjunction (∨) &lt;code&gt;Or&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Negation (¬) &lt;code&gt;Not&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;In Boolean Algebra we compute complex expressions of Logic Operators containing variables&lt;/p&gt;&#xA;&lt;h1 id=&#34;propositional-logic&#34;&gt;Propositional Logic&lt;/h1&gt;&#xA;&lt;p&gt;Propositional logic is used to combine propositions and studying their truth values&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Atomic Propositions state one fact or one property &lt;code&gt;Mammals are vertebreae&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;formulas&#34;&gt;Formulas&lt;/h2&gt;&#xA;&lt;p&gt;==Formulas== are used to combine propositions&#xA;[[Logic]] is still a language so we must specify&lt;/p&gt;</description>
     </item>
     <item>
       <title>History of KR</title>
-      <link>http://localhost:1313/NotesWebsite/kr/history-of-kr/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/kr/history-of-kr/</link>
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/kr/history-of-kr/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/kr/history-of-kr/</guid>
       <description>&lt;p&gt;History is deeply connected with recording techniques such as writing or oral traditions (humans always felt the need to transmit knowledge, `this was done trough myths, stories, etc.)&lt;/p&gt;&#xA;&lt;p&gt;Oral and written traditions preserve and propagate knowledge&#xA;traditions hardly resist the test of time, their meaning easily change, and they&amp;rsquo;re also very hard to update, the language could also result ambiguous&#xA;Our goal is to represent knowledge with guarantees without the need of Trained Interpreters (like in religious text)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Logic</title>
-      <link>http://localhost:1313/NotesWebsite/kr/logic/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/kr/logic/</link>
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/kr/logic/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/kr/logic/</guid>
       <description>&lt;p&gt;Type of language without the nuances (you write exactly whatever you mean , every sentence has 1 meaning)&#xA;we will use logic to manipulate knowledge, associating expressions with their meaning&lt;/p&gt;&#xA;&lt;p&gt;Reasoning needs ==guarantees&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;After reading the party examples from the slides (example of a constraint satisfaction problem)&lt;/code&gt;&#xA;We couldn&amp;rsquo;t respond to the question &amp;ldquo;Who&amp;rsquo;s invited as there isn&amp;rsquo;t a single viable answer&amp;rdquo;, however we can say for sure that the party is possible&lt;/p&gt;</description>
     </item>
     <item>
       <title>Logic and Symbolic AI</title>
-      <link>http://localhost:1313/NotesWebsite/kr/logic-and-symbolic-ai/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/kr/logic-and-symbolic-ai/</link>
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/kr/logic-and-symbolic-ai/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/kr/logic-and-symbolic-ai/</guid>
       <description>&lt;h1 id=&#34;intelligence&#34;&gt;Intelligence&lt;/h1&gt;&#xA;&lt;p&gt;AI deals with machines showing intelligent traits, isn&amp;rsquo;t equivalent to humane cognitive attributes&#xA;Humans work on 2 different thought processes; ==system 1 (reflexes, fast and intuitive) and system 2 (Used in thought, slow and more logical, takes effort and time)&lt;/p&gt;&#xA;&lt;p&gt;System 1 is useful for simple task but can be easily fooled (Pareidolia) it&amp;rsquo;s also hard wired and hard to modify it (In AI creation and modification of it can be very expensive as it needs time and repetition to build a strong muscle memory)&lt;/p&gt;</description>
     </item>
   </channel>

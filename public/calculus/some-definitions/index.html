@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Some Definitions &ndash; My Notes</title>
+    <head><title>Some Definitions &ndash; My Notes</title>
 <meta name="description" content="Check out my socials">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
-<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/custom.css">
 
 
 
@@ -52,20 +52,20 @@
 
             <header class="page__header"><nav class="page__nav main-nav">
     <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+      <li class="nomarker"><h1 class="page__logo"><a href="https://xn--9r9ha.uz/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
     
     
-    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/about/" title="">About</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://xn--9r9ha.uz/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/kr/" title="KR">KR</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/physics/" title="Physics">Physics</a></li>
     
     </ul>
 </nav>
@@ -81,6 +81,39 @@
 $Q \supseteq A \rightarrow where \ A {2,3}, if \ exists \ a \ number \ such \ that \ 2&lt;r \in Q &lt;3, then \ A \ is \ a \ bounded  \ set$
 Q couldn&rsquo;t be a bounded set as  $Q = {-\infty, +\infty}$</p>
 <p>A Set can be bounded below, such that  $A = {0, +\infty }$, A Set can also be upwards bounded, such that$A = {-\infty, 2 }$</p>
+<p>Any non empty subset of $\mathbb{R}$ has a sup and a inf</p>
+<p>Considering $A = {-1, 5}$ then $-A = {x \in \mathbb{R} -x\in A }$<br>
+so $-(-1,5) = (-5,1)$
+we can say that $sup(-A) = -inf\ A$ and $inf(-A) = -sup\ A$</p>
+<p>In $R$ most things are defined, such as $\log A$ or $\cos(\alpha)$ , but we still cant divide by 0 or solve $\sqrt{-2}$ as $A^\alpha &gt; 0$</p>
+<p>Formula to solve third degree equations such as $X^3 + px = q$
+$$x = \sqrt[3]{A + \sqrt{B}} \ + \sqrt[3]{A - \sqrt{B}}  $$
+Accepting complex numbers means accepting the fact that the numbers are in an <strong>Unordered Field</strong>
+$\mathbb{C}$ field must $\mathbb{C} \supseteq \mathbb{R}$</p>
+<p>We can represent complex numbers as a plane, where the X value is the real value and the Y value is the imaginary</p>
+<h2 id="operations">Operations</h2>
+<p><strong>Sum</strong> is computed as the vector sum between the 2 points (You add together the Real part and the imaginary Part)</p>
+<p>$2+3i + 3-4i = 5-1i$</p>
+<h3 id="multiplication">Multiplication</h3>
+<p>$$(x + iq)(v +iw) = xv + i(qv +xw) + qwi^2 = xv -qw +i(qv+xw),\ considering \ i^2 \ as \ -1$$</p>
+<h3 id="conjugationbara">Conjugation($\bar{A}$)</h3>
+<p>conjugation refers to a pair of binomials that differ only by sign, in case of complex conjugation, the difference has to be in the imaginary part
+$z = a +ib \ then \ \bar{z}= a - ib$  while $z=3 \ then \  \bar{z} = 3$
+$z$ and $\bar{z}$ are symmetric in relation to the X axis, also $z \cdot \bar{z} = z^2$</p>
+<h3 id="reciprocal">Reciprocal</h3>
+<p>$z = x + iy \neq 0$
+$\frac{1}{z} = \frac{1}{x+iy}$ we then multiply for the conjugate giving $$\frac{x-iy}{x^2+y^2}=\frac{x}{x^2 + y^2} - \frac{y}{x^2-y^2}i$$</p>
+<h2 id="fundamental-theorem-of-algebra">Fundamental Theorem of Algebra</h2>
+<p>One of the strongest properties of $\mathbb{C}$ is the fact that it is algebraically closed $\rightarrow$ any polynomial of degree $\ge$ 1 <code>(pol. of degree 0 are costants)</code> with coefficient in $\mathbb{C}$ has a root in $\mathbb{C}$</p>
+<h2 id="computing-powers">Computing Powers</h2>
+<p>computing $(x + iy)^7$  normally would be very time expensive</p>
+<p>We can use a different approach based on geometry</p>
+<p>![[Excalidraw/Drawing 2024-10-08 09.51.13.excalidraw]]
+$\tilde{z}$ is new object related to an original object $z$</p>
+<h3 id="trigonometric-representation-of-a-complex-number">Trigonometric Representation of a Complex number</h3>
+<p>$$ z = \mid z \mid (\cos(\theta) +i\sin(\theta)) $$</p>
+<p>knowing this, $z^n$ becomes, using <code>de moivre formula</code>
+$$z^n = \mid z \mid (\cos n\theta + i\sin n\theta) $$</p>
 
     </div>
     <footer class="content__footer"></footer>
@@ -119,7 +152,7 @@ Q couldn&rsquo;t be a bounded set as  $Q = {-\infty, +\infty}$</p>
     
         <p>
             
-            2024-10-05
+            2024-10-08
         </p>
     
 

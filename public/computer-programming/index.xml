@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Programming on My Notes</title>
-    <link>http://localhost:1313/NotesWebsite/computer-programming/</link>
+    <link>https://xn--9r9ha.uz/NotesWebsite/computer-programming/</link>
     <description>Recent content in Computer Programming on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/NotesWebsite/computer-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xn--9r9ha.uz/NotesWebsite/computer-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exercise 2.2.3</title>
-      <link>http://localhost:1313/NotesWebsite/computer-programming/breakfastex/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/computer-programming/breakfastex/</link>
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/computer-programming/breakfastex/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/computer-programming/breakfastex/</guid>
       <description>&lt;p&gt;If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;minutes = 9*60 + 12&#xA;TotalTime = minutes + 2*(8 + 15/60) + 3*(7+ 12/60)&#xA;print(int(TotalTime/60))&#xA;print(TotalTime - (int(TotalTime/60)) *60)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Introduction to Computer Programming</title>
-      <link>http://localhost:1313/NotesWebsite/computer-programming/books/</link>
+      <link>https://xn--9r9ha.uz/NotesWebsite/computer-programming/books/</link>
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>http://localhost:1313/NotesWebsite/computer-programming/books/</guid>
+      <guid>https://xn--9r9ha.uz/NotesWebsite/computer-programming/books/</guid>
       <description>&lt;h1 id=&#34;history-of-computing-machines&#34;&gt;History of Computing Machines&lt;/h1&gt;&#xA;&lt;h3 id=&#34;pascaline&#34;&gt;Pascaline&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Digital, Non programmable machine based on gears&lt;/li&gt;&#xA;&lt;li&gt;Able to do simple operations like Addition and Subtraction&lt;/li&gt;&#xA;&lt;li&gt;Computations based on the discrete positions of the gears&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;differential-engine&#34;&gt;Differential Engine&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Digital, non programmable machine based on an Engine &lt;code&gt;who would have guessed&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Able to compute polynomial approximations through the compute of tables&lt;/li&gt;&#xA;&lt;li&gt;Evolved into the Analytical Engine, which was General purpose programmable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;z1&#34;&gt;Z1&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Digital, Partially programmable machine&lt;/li&gt;&#xA;&lt;li&gt;Able to compute the 4 basic operations (`division was doing trough looping)&lt;/li&gt;&#xA;&lt;li&gt;Later evolved into the Z3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tr-48&#34;&gt;TR-48&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Analog, programmable computer based on transistors&lt;/li&gt;&#xA;&lt;li&gt;Used for simulation and process control&lt;/li&gt;&#xA;&lt;li&gt;Faster than Digital solutions of its time&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;von-neumann-architecture&#34;&gt;Von Neumann architecture&lt;/h1&gt;&#xA;&lt;p&gt;Most current computers are built on this&#xA;Programs and data are stored as numbers in memory&lt;/p&gt;</description>
     </item>
   </channel>
