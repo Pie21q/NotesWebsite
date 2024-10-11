@@ -10,7 +10,7 @@ math=true
 Refer to the KR notes on the same topic
 
 Remember that
-$$ \begin{flalign}\rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if &&\end{flalign}$$
+$$ \rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if $$
 Some expressions make perfect sense, like
 $$(p\vee q) \rightarrow r$$
 `If it rains (p) or it snows (q), then i will take an umbrella (r)`
