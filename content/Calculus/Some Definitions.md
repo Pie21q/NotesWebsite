@@ -1,6 +1,6 @@
 +++
 title = 'Some Definitions'
-date = 2024-10-08
+date = 2024-10-15
 draft = false
 math = true
 +++
@@ -53,6 +53,30 @@ We can use a different approach based on geometry
 $\tilde{z}$ is new object related to an original object $z$ 
 ### Trigonometric Representation of a Complex number
 $$ z = \mid z \mid (\cos(\theta) +i\sin(\theta)) $$
-
 knowing this, $z^n$ becomes, using `de moivre formula`
 $$z^n = \mid z \mid (\cos n\theta + i\sin n\theta) $$
+	$(x + y)^n = \sum_{k=0}^n \ {n \choose k} \ x^{n-k}y^k$ 
+
+keep in mind that ${n \choose k} = \frac{n!}{k!(n-k)!}$ and ${n \choose 0} = {n \choose n} =1$ and ${n \choose k} = {n \choose n -k}$ 
+also $0! =1$ 
+
+## Pascals Triangle
+[![Pascal's triangle - Wikipedia](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ3LLzQMkvoOx-Wa92g30jn56SwUo4lkp1ZQ&s)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPascal%2527s_triangle&psig=AOvVaw1nc6cSlRbJJWQfQvX2drDo&ust=1729064697531000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIixpIryj4kDFQAAAAAdAAAAABAk)
+Looking at the fifth row
+
+$(x+y)^5 = x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 +5xy^4 +y^5$
+
+Computing $(x+y)^{20}$ could prove to be quite difficult
+
+## Probability
+$\Box \ \Box \ \Box\ \Box \ \Box$
+We have to fill out 5 box with 7 different colors
+- If we can repeat the colors then the different number of combinations amounts to $7 *7  * 7 * 7 * 7 = 7^5$
+- if we can't repeat the colors after their first use, the number of combinations becomes $7 * 6 * 5 * 4 * 3$
+
+
+[![Permutazioni, disposizioni, combinazioni](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATFG6_gCggMF5MyEYxW5fLJoilhVpOE-H7g&s)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdotto.me%2Fonline%2F0%2F1%2Fwpforo%2Fdefault_attachments%2F1702728680-Permutazioni-disposizioni-combinazioni.pdf&psig=AOvVaw3HjB6xhvuiQRYvjKmoYdBP&ust=1729067715484000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiI4an9j4kDFQAAAAAdAAAAABAS)
+
+## Function
+a function $f$ is a rule which assign an element of B to any single element of A
+- A function $f$ is defined **injective** if every $f(n)$ is different from each other so $f(x) \neq f(y)$ is always true
