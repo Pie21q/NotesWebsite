@@ -1,3 +1,10 @@
++++
+title = 'Z3, basic notions and syntax'
+date = 2024-10-16
+draft = false
+math=true
++++
+
 - `(declare-const p Bool)` is declaring a variable named P
 - `;` comments are done through semicolons
 - formulas are declared using `not, and, or, =>, =`, the symbols must be prefixed, for example to write $p \vee q$  you would write `(or p q)`
