@@ -19,14 +19,14 @@ while others are meaningless
 $$pq)) \rightarrow r$$
 ## Formula
 A formula is a string of characters which follows the following rules
-$$Every \space p \in L \space is \ a \ formula \ (rule \ n1)&& \end{flalign}$$$$ \begin{flalign} if \ all \ A,B's \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)$$
+$Every \space p \in L \space is \ a \ formula \ (rule \ n1) \ if \ all \ A,B's \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)$
 we can also create a tree from the main formula, where the nodes are built using rule 2 and the last elements using rule 1
 
 Some conventions are used to eliminate some brackets
 
 $$ a*b=c, \ product \ is \ stronger \ than \ sum $$
 in the same way, in computational logic
-$$ \neg \ is \ stronger \ than \wedge \vee, and \ they're \ stronger \ than $$
+$$ \neg \ is \ stronger \ than \wedge \vee, and \ they're \ stronger \ than \ \rightarrow $$
 >for example
 >$$ ((\neg p) \rightarrow (q \vee r)) = \neg p \rightarrow q \vee r $$
 
