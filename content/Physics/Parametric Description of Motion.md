@@ -1,6 +1,6 @@
 +++
 title = 'Parametric Description of Motion'
-date = 2024-10-17
+date = 2024-10-22
 draft = false
 math = true
 +++
@@ -17,3 +17,8 @@ $z(t) = z(t_0) + v_{z0}(t-t_0) + \frac{a_z}{2}(t-t_0)^2 \rightsquigarrow s = \fr
 $v_z(t) = v_{z0} + a_z(t -t_0) \rightsquigarrow v=at$  
 
 with reaction force we refer to a force which acts in opposite way due to another force `normal forces`
+
+Types of friction
+- Rolling Friction = $\mu_r N$
+- Viscous Friction = $-fv$
+- Drag Force = $-\frac{C}{2}A\rho v^2$n where $\rho$ is the density and $A$ the cross-section Area

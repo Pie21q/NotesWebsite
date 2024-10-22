@@ -1,8 +1,8 @@
 +++
 title = 'Representing Knowledge as Rules'
-date = 2024-10-07
+date = 2024-10-22
 draft = false
-math = true 
+math = true
 +++
 
 also see [[Boolean Algebra and Propositional Logic]]
@@ -64,7 +64,7 @@ To guarantee that y is true, $X_i (1 \le i \le n)$ need to be true
 $y \leftarrow X_1, . . .,X_{i-1}, X_i, X_{i+1} X_n$ , We already know that $X_i$ is true so we can ignore it in the body of the first rule `We only care about the truth value of the remaining variable`
 
 ## Fact Extraction Algorithm
-
+¢
 Input: a KB K `A KB is just a set of horn clauses`
 Output: All the true facts given K
 
@@ -133,3 +133,15 @@ For example, the expression "Fathers are male parents", becomes
 $father \leftarrow male, parent$, while the expression "monotremata are egg-laying mammals becomes $monotreme \leftarrow mammal, oviparous$" 
 This language is limited by it's `inexpressivity`, as you cant express relationships between object `(If we are talking about parents, we arent able to discern between grandparents, uncles or siblings)`, as to do this we need to use **Predicate Logic**
 
+## Proof by induction
+- We follow the steps used to construct $\mathcal{I}_{can}$ 
+- If we find a substitution which makes the body true then by induction $h(\sigma(\bar{t_i})) \in Q_i^{\mathcal{I}}$ 
+Considering what stated above, we can conclude that it's sufficient to look at the canonical model to derive all **grounded, atomic** consequences of a consistent KB
+
+Are we always able to construct $\mathcal{I}_{can}$ effectively?
+
+- A ground predicate is a predicate which has no variables, only constant, to add a Ground predicate to our rules we must check for every rule and test if the body holds
+
+What if we're interested in more complex properties 
+- find all pairs(x, y) such that P(x) and there is a Q-path from x to y $\rightarrow$ we can look at the graph to determine if there's a direct path such that $QPath(x, y) \leftarrow Q(x, y)$, or a more complex path, following different nodes such that $QPath(x, y) \leftarrow Q(x,z), \ QPath(z,y)$ 
+Using this new terms we can write a query such that P(x),QPathg(x, y) 
