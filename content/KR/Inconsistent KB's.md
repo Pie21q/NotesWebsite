@@ -1,5 +1,5 @@
 +++
-title = 'Inconsistent KB's'
+title = 'Inconsistent KBs'
 date = 2024-10-22
 draft = false
 math = true
