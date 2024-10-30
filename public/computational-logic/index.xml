@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computational Logic on My Notes</title>
-    <link>https://xn--9r9ha.uz/NotesWebsite/computational-logic/</link>
+    <link>http://localhost:1313/NotesWebsite/computational-logic/</link>
     <description>Recent content in Computational Logic on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Oct 2024 12:08:51 +0200</lastBuildDate>
-    <atom:link href="https://xn--9r9ha.uz/NotesWebsite/computational-logic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/NotesWebsite/computational-logic/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Computational Logic, from SAT to SMT</title>
-      <link>https://xn--9r9ha.uz/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</link>
-      <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
-      <guid>https://xn--9r9ha.uz/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</guid>
-      <description>&lt;h2 id=&#34;propositional-logic&#34;&gt;Propositional Logic&lt;/h2&gt;&#xA;&lt;p&gt;Refer to the KR notes on the same topic&lt;/p&gt;&#xA;&lt;p&gt;Remember that&#xA;$$\rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if$$&#xA;Some expressions make perfect sense, like&#xA;$$(p\vee q) \rightarrow r$$&#xA;&lt;code&gt;If it rains (p) or it snows (q), then i will take an umbrella (r)&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;while others are meaningless&#xA;$$pq)) \rightarrow r$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;formula&#34;&gt;Formula&lt;/h2&gt;&#xA;&lt;p&gt;A formula is a string of characters which follows the following rules&#xA;$$ Every \space p \in L \space is \ a \ formula \ (rule \ n1)  $$$$  if \ all \ A,B&amp;rsquo;s \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)   $$&#xA;we can also create a tree from the main formula, where the nodes are built using rule 2 and the last elements using rule 1&lt;/p&gt;</description>
+      <title>Z3, basic notions and syntax</title>
+      <link>http://localhost:1313/NotesWebsite/computational-logic/z3-lab-instructions/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/computational-logic/z3-lab-instructions/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;(declare-const p Bool)&lt;/code&gt; is declaring a variable named P&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;;&lt;/code&gt; comments are done through semicolons&lt;/li&gt;&#xA;&lt;li&gt;formulas are declared using &lt;code&gt;not, and, or, =&amp;gt;, =&lt;/code&gt;, the symbols must be prefixed, for example to write $p \vee q$  you would write &lt;code&gt;(or p q)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;(assert(formula))&lt;/code&gt; adds the formula to the check-sat&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;(check-sat)&lt;/code&gt; verifies if the formula can be True&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To check if a formula $\mathcal{A}$ is a Tautology we first negate the formula and then we verify if $\neg{A}$ is unsatisfiable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computational Logic, From SAT to SMT</title>
+      <link>http://localhost:1313/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/</guid>
+      <description>&lt;h2 id=&#34;propositional-logic&#34;&gt;Propositional Logic&lt;/h2&gt;&#xA;&lt;p&gt;Refer to the KR notes on the same topic&lt;/p&gt;&#xA;&lt;p&gt;Remember that&#xA;$$ \rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if $$&#xA;Some expressions make perfect sense, like&#xA;$$(p\vee q) \rightarrow r$$&#xA;&lt;code&gt;If it rains (p) or it snows (q), then i will take an umbrella (r)&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;while others are meaningless&#xA;$$pq)) \rightarrow r$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;formula&#34;&gt;Formula&lt;/h2&gt;&#xA;&lt;p&gt;A formula is a string of characters which follows the following rules&#xA;$Every \space p \in L \space is \ a \ formula \ (rule \ n1) \ if \ all \ A,B&amp;rsquo;s \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)$&#xA;we can also create a tree from the main formula, where the nodes are built using rule 2 and the last elements using rule 1&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Dealing with objects &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/telelimoni/" title="Telelimoni">Telelimoni</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Dealing with objects</h1>
+    </header>
+    <div class="content__body">
+        <p><code>Propositional logic</code> is able to deal with only one item at a time
+What if we want to relate different objects?</p>
+<ul>
+<li>Ana is a professor</li>
+<li>Ana supervises bob
+or</li>
+<li>A grandparents is the parent of a parent</li>
+<li>Uncles have siblings who are parents</li>
+</ul>
+<p>What we have to do is extending the rules in order to handle predicate knowledge
+uncle(x) $\leftarrow$ sibling(x, y), parent(x, y)</p>
+<p>From proposition to predicates</p>
+<ul>
+<li><strong>Mammal</strong> is a <code>propositional variable</code> which is either True <code>or</code> False</li>
+</ul>
+<p>we can then represent more informations through predicates such as</p>
+<ul>
+<li>Mammal(Dumbo)</li>
+<li>Parent(Ana, Bob) $\rightarrow$ Ana is the parent of bob <code>this is a proposition and can be both True or False</code>
+What about representing implicit constants?</li>
+</ul>
+<blockquote>
+<p>we use placeholders, also called variables</p>
+</blockquote>
+<ul>
+<li>Parent(Ana, $x$) $\rightarrow$ Ana is the parent of X, the truth value depends on the value of X
+We need to give a <code>scope</code> to our variable X</li>
+<li>$\exists x$.parent(Ana, $x$) $\rightarrow$ it exists at least one constant that makes it true</li>
+<li>$\forall x$.parent(Ana, $x$) $\rightarrow$ It&rsquo;s true for every constant
+For KR we wont use the full <code>predicate logic</code>, just the concepts as stated above</li>
+</ul>
+<h2 id="predicate-logic-syntax">Predicate logic Syntax</h2>
+<ul>
+<li>Constants $\mathcal{C}$ : a, b, c,&hellip;</li>
+<li>Unary and Binary predicate symbols $\mathcal{P}$: P, Q, R <code>(Unary and Binary based on the amount N of costants defined in predicates such that Mammal(N) )</code></li>
+<li>Variables $\mathcal{V}$ : x, y ,z</li>
+<li>With &lsquo;Terms&rsquo; we refer to both <strong>Constants</strong> and <strong>Variables</strong></li>
+</ul>
+<p>Some examples of predicates can be</p>
+<ul>
+<li>P(t)</li>
+<li>Q(t, s)
+A <code>Literal</code> can be both a predicate or the negation of it
+A Predicate Horn clause is a disjunction of literals with <strong>At most one positive</strong></li>
+</ul>
+<p>P, R are used as <code>Unary predicates</code> while Q is used for <code>binary</code> ones</p>
+<p>Writing a clause in rule form can be done in the same way as <code>Propositional Logic</code>
+$$Q(x,y) \leftarrow Q(b,y), \  P(x), \ R(z)$$
+For example
+grandparent(x, y) $\leftarrow$ parent (x, z),  parent(z, y)
+If an object X is the parent of another parent which has a child Y, then X is the parent of Y $\rightarrow$ <code>X is the grandparent of Y</code></p>
+<p>Predicates can be used to represent</p>
+<ul>
+<li>Properties of objects (Unary predicates)</li>
+<li>Relationships between objects (Binary predicates)
+Propositional valuations are no longer enough as we have to specify which objects satisfy properties and relations</li>
+</ul>
+<h2 id="interpretation-based-semantics">Interpretation Based Semantics</h2>
+<p>Interpretations $\mathcal{I} = (\Delta^{\mathcal{I}}, \cdot^{\mathcal{I}})$  are based on two components</p>
+<ul>
+<li>A domain $\Delta^I$</li>
+<li>An interpretation function $\cdot^I$</li>
+<li>$a^{\mathcal{i}} \in \Delta^{\mathcal{I}}$</li>
+<li>if P is unary then $P^{\mathcal{I}} \subseteq \Delta^{\mathcal{I}}$</li>
+<li>if P is binary then $P^{\mathcal{I}} \subseteq \Delta^{\mathcal{I}} \times \Delta^{\mathcal{I}}$</li>
+</ul>
+<p>Based on this, we interpret constraints as Objects, unary predicates as classes of objects with the property, Binary predicates as relations between objects</p>
+<h2 id="graphs">Graphs</h2>
+<p>A graph is a collection of points (nodes) and arrow (edges) which connect them, we can also express interpretations in the same way, using <code>labeled graphs</code></p>
+<p>when the interpretation $\mathcal{I}$ makes the body true, it also makes the head true</p>
+<h2 id="canonical-interpretation-construction">Canonical interpretation Construction</h2>
+<p>To build a canonical interpretation you need</p>
+<ul>
+<li>An empty interpretation</li>
+<li>All the necessary ingredients</li>
+</ul>
+<p>To actually construct a canonical interpretation you need three steps</p>
+<ul>
+<li>Create all relevant nodes</li>
+<li>Add Facts</li>
+<li>Propagate Rules
+Traditionally, canonical interpretations follow a monotonically constructive approach, meaning all steps can only add elements, but never delete</li>
+</ul>
+<p>This is mostly good for definite Horn Clauses, while it&rsquo;s pretty bad for non definite ones (Constraints) $\rightarrow$ During the construction of a canonical interpretation we ignore all constraints</p>
+<p>the <strong>Domain</strong> is the set of all constraints</p>
+<p>For every rule i go through every possible substitution and force on the head every one which makes the body true</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-10-10
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

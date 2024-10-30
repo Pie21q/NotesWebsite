@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head><title>Computational Logic, from SAT to SMT &ndash; My Notes</title>
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Computational Logic, From SAT to SMT &ndash; My Notes</title>
 <meta name="description" content="Check out my socials">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/risotto.css">
-<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/custom.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
 
 
 
@@ -52,20 +52,22 @@
 
             <header class="page__header"><nav class="page__nav main-nav">
     <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://xn--9r9ha.uz/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
     
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/about/" title="">About</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item active" href="https://xn--9r9ha.uz/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/kr/" title="KR">KR</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/telelimoni/" title="Telelimoni">Telelimoni</a></li>
     
     </ul>
 </nav>
@@ -74,13 +76,13 @@
 
             <section class="page__body">
     <header class="content__header">
-        <h1>Computational Logic, from SAT to SMT</h1>
+        <h1>Computational Logic, From SAT to SMT</h1>
     </header>
     <div class="content__body">
         <h2 id="propositional-logic">Propositional Logic</h2>
 <p>Refer to the KR notes on the same topic</p>
 <p>Remember that
-$$\rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if$$
+$$ \rightarrow means \space if, \space while\space \leftrightarrow \space means \space if \space and\space only\space if $$
 Some expressions make perfect sense, like
 $$(p\vee q) \rightarrow r$$
 <code>If it rains (p) or it snows (q), then i will take an umbrella (r)</code></p>
@@ -88,12 +90,12 @@ $$(p\vee q) \rightarrow r$$
 $$pq)) \rightarrow r$$</p>
 <h2 id="formula">Formula</h2>
 <p>A formula is a string of characters which follows the following rules
-$$ Every \space p \in L \space is \ a \ formula \ (rule \ n1)  $$$$  if \ all \ A,B&rsquo;s \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)   $$
+$Every \space p \in L \space is \ a \ formula \ (rule \ n1) \ if \ all \ A,B&rsquo;s \ are \ formulas, then \ (A \vee B) \ and \ (A \wedge B) \ are \ also \ formulas \ (rule \ n2)$
 we can also create a tree from the main formula, where the nodes are built using rule 2 and the last elements using rule 1</p>
 <p>Some conventions are used to eliminate some brackets</p>
-<p>$$  a*b=c, \ product \ is \ stronger \ than \ sum   $$
+<p>$$ a*b=c, \ product \ is \ stronger \ than \ sum $$
 in the same way, in computational logic
-$$  \neg \ is \ stronger \ than \wedge \vee, and \ they&rsquo;re \ stronger \ than \ \rightarrow   $$</p>
+$$ \neg \ is \ stronger \ than \wedge \vee, and \ they&rsquo;re \ stronger \ than \ \rightarrow $$</p>
 <blockquote>
 <p>for example
 $$ ((\neg p) \rightarrow (q \vee r)) = \neg p \rightarrow q \vee r $$</p>
@@ -102,12 +104,70 @@ $$ ((\neg p) \rightarrow (q \vee r)) = \neg p \rightarrow q \vee r $$</p>
 <p>Implication&rsquo;s more problematic, as in natural languages <code>such as english</code>, implications can have different meanings.
 In Logic this couldn&rsquo;t work, so implication takes a meaning similar to the one present in Computer science</p>
 <p>==The only way i can falsify an implication is making the antecedent true and the other true</p>
-<p>$$  A \rightarrow B \ can  \ be \ false \ exclusively \ when  \ A  \ is \ false   $$</p>
+<p>$$ \begin{flalign} A \rightarrow B \ can  \ be \ false \ exclusively \ when  \ A  \ is \ false &amp;&amp; \end{flalign}$$</p>
 <p>we can define implication as
 $$ V(\neg A \vee B) = V(\neg(A \vee \neg B)) $$</p>
 <p>also
 $$ A \leftrightarrow B \equiv (A \rightarrow B) \wedge (B \rightarrow A)$$</p>
 <p>$$ \neg \neg \neg \neg \neg p = \neg p$$</p>
+<h1 id="sat">Sat</h1>
+<p>Sat is a program that can be used to find satisfiable solutions for a given logic problem</p>
+<p>With heuristics we refer to a method which is not fully refined nor optimized, but it is still considered good enough to reach the resolution of a problem</p>
+<p>Resolution
+DPLL <code>Davis-Putnam-Logemann- Loveland</code> is an algorithm used in the resolution of SAT problems, it works by assigning values to boolean variables and backtracking whenever it runs into a contradiction.</p>
+<h2 id="tautology">Tautology</h2>
+<p>A value $\mathcal{A}$ is a Tautology iff $V(\mathcal{A}) = 1 \ \forall V$
+A value $\mathcal{A}$ is unsatisfiable iff $V(\mathcal{A}) = 0$ <code>also called a contradiction</code>
+2 Values $\mathcal{A}$ and $\mathcal{B}$ are equivalent iff $V(\mathcal{A}) = V(\mathcal{B})$
+2 Values $\mathcal{A}$ and $\mathcal{B}$ are equi-satisfiable if they&rsquo;re both satisfiable or unsatisfiable</p>
+<h2 id="some-definitions">Some definitions</h2>
+<ul>
+<li>Atom: Propositional Variables  $p, q, r$</li>
+<li>Literal: Atoms or negated atoms $p, q, \neg p$</li>
+<li>Clause: Disjunction of literals $p, \neg p, p \vee q, p \vee \neg q$</li>
+<li>Cube: Conjunction of literals$p, \neg p, p \wedge q, p \wedge \neg q$</li>
+<li>Conjunctive normal form <code>CNF</code>: Conjunction of clauses $p \wedge (q\vee \neg r)$</li>
+<li>Disjunctive normal form <code>DNF</code>: Disjunction of clauses $p \vee (q\vee \neg r)$</li>
+<li>Negation normal form <code>NNF</code>: No $\rightarrow$ and $\neg$ only in front of atoms $\neg p \wedge (q \vee \neg r), \neg p$, <code>negations have to be only in front of atoms</code></li>
+</ul>
+<p>What will we do in the lab?</p>
+<blockquote>
+<p>Take a set of formulae and find, <code>if possible</code>, an assignment which makes all of them true, producing a set of equi-satisfiable clauses (As an intermediate step we&rsquo;ll get a set of formulae in NNF)</p>
+</blockquote>
+<p>keep in mind that</p>
+<blockquote>
+<p>Every formula is equivalent to a formula in NNF, also the conversion happens very quickly
+$A \rightarrow B \rightsquigarrow \neg A \vee B$
+$\neg(A\wedge B) \rightsquigarrow \neg A \vee \neg B$<br>
+If you replace a formula C with a formula D with some D&rsquo; equivalent to D, then the result is equivalent to C</p>
+</blockquote>
+<p>CNF Transformations can be done in 2 ways</p>
+<ul>
+<li>
+<p>Non structural way makes the formula exponentially long but produces logical equivalences <code>For our purposes, in manual exercises is better to use non structural way</code></p>
+<ul>
+<li>Using non structural way we transform our formulae in a CNF $A \vee (B\wedge C) \rightsquigarrow (A\vee B) \wedge (A\vee C)$  <code>A appears 2 times instead of one</code></li>
+</ul>
+</li>
+<li>
+<p>Structural Way is more efficient but only produces satisfiability <code>A tool like Z3 will use a structural way to compute problems</code></p>
+</li>
+</ul>
+<p>To convert into CNF we use 3 formulas</p>
+<ul>
+<li>$A \rightarrow B \rightsquigarrow \neg A \vee B$</li>
+<li>$\neg (A\rightarrow B) \rightsquigarrow A \wedge \neg B$</li>
+<li>$(A \wedge B) \vee C \rightsquigarrow (A \vee C) \wedge (B \vee C)$ &ldquo;From NNF to CNF&rdquo;</li>
+</ul>
+<h2 id="for-all-rules-for-simplification-also-reference-krs-notes-for-boolean-algebra-demorgans-law-and-distributivity-rules">For all rules for simplification also reference KR&rsquo;s notes for Boolean Algebra (DeMorgan&rsquo;s Law and distributivity rules)</h2>
+<p>How to recognize correct reasoning</p>
+<blockquote>
+<p>`For example: If it rains (p) i take an umbrella (q), it does not rain, so i do not take an umbrella is wrongful reaasoning, as i could still be taking the umbrella, the proposition above only forces me to take an umbrella if it&rsquo;s raining</p>
+</blockquote>
+<p>$p \rightarrow q$
+$\neg q$  so $\neg p$</p>
+<p>This has to be true for every V, so we have to check if for every V $V(p\rightarrow q) = 1 \  and \  V(\neg P) = 1$
+Computing the truth table we can se that $\neg q$  so $\neg p$  isn&rsquo;t true</p>
 
     </div>
     <footer class="content__footer"></footer>
@@ -146,7 +206,7 @@ $$ A \leftrightarrow B \equiv (A \rightarrow B) \wedge (B \rightarrow A)$$</p>
     
         <p>
             
-            2024-10-05
+            2024-10-11
         </p>
     
 

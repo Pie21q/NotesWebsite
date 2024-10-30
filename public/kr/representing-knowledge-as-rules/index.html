@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head><title>Representing Knowledge as Rules &ndash; My Notes</title>
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Representing Knowledge as Rules &ndash; My Notes</title>
 <meta name="description" content="Check out my socials">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/palettes/base16-dark.css">
-<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/risotto.css">
-<link rel="stylesheet" href="https://xn--9r9ha.uz/NotesWebsite/css/custom.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
 
 
 
@@ -52,20 +52,22 @@
 
             <header class="page__header"><nav class="page__nav main-nav">
     <ul>
-      <li class="nomarker"><h1 class="page__logo"><a href="https://xn--9r9ha.uz/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
     
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/about/" title="">About</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item active" href="https://xn--9r9ha.uz/NotesWebsite/kr/" title="KR">KR</a></li>
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="https://xn--9r9ha.uz/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/telelimoni/" title="Telelimoni">Telelimoni</a></li>
     
     </ul>
 </nav>
@@ -120,7 +122,8 @@ we can then say Y is a consequence of this and Y is a Tautology</p>
 <p>To guarantee that y is true, $X_i (1 \le i \le n)$ need to be true</p>
 <p>$y \leftarrow X_1, . . .,X_{i-1}, X_i, X_{i+1} X_n$ , We already know that $X_i$ is true so we can ignore it in the body of the first rule <code>We only care about the truth value of the remaining variable</code></p>
 <h2 id="fact-extraction-algorithm">Fact Extraction Algorithm</h2>
-<p>Input: a KB K <code>A KB is just a set of horn clauses</code>
+<p>¢
+Input: a KB K <code>A KB is just a set of horn clauses</code>
 Output: All the true facts given K</p>
 <pre tabindex="0"><code>While 
 	there is a fact x and a rule with x in the body do remove x from the body of all rules
@@ -165,6 +168,21 @@ In this case, the only relevant valuations are the ones which satisfy K and make
 <p>For example, the expression &ldquo;Fathers are male parents&rdquo;, becomes
 $father \leftarrow male, parent$, while the expression &ldquo;monotremata are egg-laying mammals becomes $monotreme \leftarrow mammal, oviparous$&rdquo;
 This language is limited by it&rsquo;s <code>inexpressivity</code>, as you cant express relationships between object <code>(If we are talking about parents, we arent able to discern between grandparents, uncles or siblings)</code>, as to do this we need to use <strong>Predicate Logic</strong></p>
+<h2 id="proof-by-induction">Proof by induction</h2>
+<ul>
+<li>We follow the steps used to construct $\mathcal{I}_{can}$</li>
+<li>If we find a substitution which makes the body true then by induction $h(\sigma(\bar{t_i})) \in Q_i^{\mathcal{I}}$
+Considering what stated above, we can conclude that it&rsquo;s sufficient to look at the canonical model to derive all <strong>grounded, atomic</strong> consequences of a consistent KB</li>
+</ul>
+<p>Are we always able to construct $\mathcal{I}_{can}$ effectively?</p>
+<ul>
+<li>A ground predicate is a predicate which has no variables, only constant, to add a Ground predicate to our rules we must check for every rule and test if the body holds</li>
+</ul>
+<p>What if we&rsquo;re interested in more complex properties</p>
+<ul>
+<li>find all pairs(x, y) such that P(x) and there is a Q-path from x to y $\rightarrow$ we can look at the graph to determine if there&rsquo;s a direct path such that $QPath(x, y) \leftarrow Q(x, y)$, or a more complex path, following different nodes such that $QPath(x, y) \leftarrow Q(x,z), \ QPath(z,y)$
+Using this new terms we can write a query such that P(x),QPathg(x, y)</li>
+</ul>
 
     </div>
     <footer class="content__footer"></footer>
@@ -203,7 +221,7 @@ This language is limited by it&rsquo;s <code>inexpressivity</code>, as you cant 
     
         <p>
             
-            2024-10-07
+            2024-10-22
         </p>
     
 
