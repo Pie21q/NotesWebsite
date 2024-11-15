@@ -1,5 +1,5 @@
 +++
-title = 'First Order Logic"
+title = 'First Order Logic'
 date = 2024-11-08
 draft = false
 math=true
