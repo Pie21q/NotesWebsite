@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-	<meta name="generator" content="Hugo 0.135.0"><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>My Notes</title>
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Estimate PI &ndash; My Notes</title>
 <meta name="description" content="Check out my socials">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +27,24 @@
 
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/NotesWebsite/index.xml" title="My Notes">
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
 </head>
 
     <body>
@@ -47,7 +61,7 @@
     
     <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
     
     <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
     
@@ -59,9 +73,26 @@
 </header>
 
             <section class="page__body">
-    <h1 id="welcome-to-this-markdown-page">Welcome to this markdown page</h1>
-<p>Hey, Pietro here, feel free to check out my notes</p>
+    <header class="content__header">
+        <h1>Estimate PI</h1>
+    </header>
+    <div class="content__body">
+        <p>$$\frac{1}{\pi} = \frac{2\sqrt{2}}{9801} \sum_{k=0}^\infty \frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$</p>
+<p>Estimate Pi using the formula above, then compare it with math.pi</p>
+<pre tabindex="0"><code>import math as m
+def estimatePi():
+    t = 0 #  t is last term
+    k = 0
+    while t &lt; 1e-15:
+        t = t + ((m.factorial(4*k)) * 1103 + 26390 * k) / (pow((m.factorial(k)), 4) * pow(396, 4 *k))
+        k = k + 1
+    return (2 * m.sqrt(2) ) / 9801 * t
 
+print(1/ estimatePi())
+print(m.pi)
+</code></pre>
+    </div>
+    <footer class="content__footer"></footer>
 
             </section>
 
@@ -93,6 +124,16 @@
 </div>
                 <hr>
                 <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-11-05
+        </p>
+    
+
+    
+
                 </div>
             </section>
 

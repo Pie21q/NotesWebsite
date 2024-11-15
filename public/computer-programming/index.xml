@@ -6,8 +6,15 @@
     <description>Recent content in Computer Programming on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/computer-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estimate PI</title>
+      <link>http://localhost:1313/NotesWebsite/computer-programming/estimatepi/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/computer-programming/estimatepi/</guid>
+      <description>&lt;p&gt;$$\frac{1}{\pi} = \frac{2\sqrt{2}}{9801} \sum_{k=0}^\infty \frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$&lt;/p&gt;&#xA;&lt;p&gt;Estimate Pi using the formula above, then compare it with math.pi&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import math as m&#xA;def estimatePi():&#xA;    t = 0 #  t is last term&#xA;    k = 0&#xA;    while t &amp;lt; 1e-15:&#xA;        t = t + ((m.factorial(4*k)) * 1103 + 26390 * k) / (pow((m.factorial(k)), 4) * pow(396, 4 *k))&#xA;        k = k + 1&#xA;    return (2 * m.sqrt(2) ) / 9801 * t&#xA;&#xA;print(1/ estimatePi())&#xA;print(m.pi)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     <item>
       <title>Exercise 4.3</title>
       <link>http://localhost:1313/NotesWebsite/computer-programming/ngonexercise/</link>
