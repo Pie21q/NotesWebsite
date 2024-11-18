@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/NotesWebsite/</loc>
-    <lastmod>2024-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/kr/</loc>
+    <lastmod>2024-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/kr/type-of-knowledge/</loc>
+    <lastmod>2024-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/first-order-logic/</loc>
+    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computer-programming/</loc>
     <lastmod>2024-11-05T00:00:00+00:00</lastmod>
@@ -20,9 +32,6 @@
     <loc>http://localhost:1313/NotesWebsite/kr/inconsistent-kbs/</loc>
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/NotesWebsite/kr/</loc>
-    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/NotesWebsite/physics/parametric-description-of-motion/</loc>
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -31,9 +40,6 @@
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/</loc>
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
-    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computational-logic/z3-lab-instructions/</loc>
     <lastmod>2024-10-16T00:00:00+00:00</lastmod>
@@ -73,6 +79,12 @@
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/physics/measures-introduction-to-data-and-error-analysis/</loc>
     <lastmod>2024-10-05T12:08:51+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/kr/from-concept-to-knowledge-in-el/</loc>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/kr/new-kr-language/</loc>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/kr/representing-individuals-in-alc/</loc>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/categories/</loc>
   </url><url>

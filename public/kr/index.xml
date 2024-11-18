@@ -6,8 +6,36 @@
     <description>Recent content in KR on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/kr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Concept to knowledge</title>
+      <link>http://localhost:1313/NotesWebsite/kr/from-concept-to-knowledge-in-el/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/from-concept-to-knowledge-in-el/</guid>
+      <description>&lt;p&gt;so far we described concepts and their relationships&lt;/p&gt;&#xA;&lt;p&gt;How do we express knowledge?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trough constraints on the relevant interpretations (Tbox)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;A Tbox (terminological Box) is used to impose restrictions on the potential interpretation of concepts&lt;/p&gt;&#xA;&lt;p&gt;A ($\mathcal{EL}^\bot$) general concept inclusion &lt;code&gt;GCI&lt;/code&gt; is an expression $C \sqsubseteq D$ with C and D $\mathcal{EL}^\bot$ concepts&#xA;a TBox is a finite set of GCI&amp;rsquo;s&lt;/p&gt;&#xA;&lt;p&gt;an interpretation $\mathcal{I}$ satisfies the GCI  $C \sqsubseteq D$ iff $C^{\mathcal{I}} \subseteq D^\mathcal{I}$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New KR language</title>
+      <link>http://localhost:1313/NotesWebsite/kr/new-kr-language/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/new-kr-language/</guid>
+      <description>&lt;p&gt;$\mathcal{EL^\top}$&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Limited expression of predicate rules&lt;/li&gt;&#xA;&lt;li&gt;allows for constraints&lt;/li&gt;&#xA;&lt;li&gt;allows for anonymous objects&lt;/li&gt;&#xA;&lt;li&gt;has effective and efficient reasoning methods&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;$\mathcal{EL^\top}$ Belongs to a bigger family of KR languages knowns as DL&amp;rsquo;s (Description Logics)&#xA;Dl&amp;rsquo;s are a category of languages characterized by:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Clear syntax&lt;/li&gt;&#xA;&lt;li&gt;formal unambiguous semantics&#xA;The scope of DL&amp;rsquo;s is to provide reasoning, and the main goal is to have decidable reasoning services (sound, complete and terminating algorithms)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Most DL&amp;rsquo;s fall within the two variable fragment of first-order predicate logic (we can only use 2 variables)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Representing Individuals in ALC</title>
+      <link>http://localhost:1313/NotesWebsite/kr/representing-individuals-in-alc/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/representing-individuals-in-alc/</guid>
+      <description>&lt;h2 id=&#34;aboxes&#34;&gt;ABoxes&lt;/h2&gt;&#xA;&lt;p&gt;Consider an infinite set $N_I$ of individual names, disjoint with $N_C \ \mbox{and} \ N_R$&lt;/p&gt;&#xA;&lt;p&gt;An &lt;strong&gt;Assertion&lt;/strong&gt; is an expression of the form&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$C(a)$ where $a \in N_I$ and C is an $\mathcal{ALC}$ concept&lt;/li&gt;&#xA;&lt;li&gt;$r(a,b)$ where $a,b \in N_I$ and $r \in N_R$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;An assertion box &lt;code&gt;ABox&lt;/code&gt; is a finite set of assertions&lt;/p&gt;&#xA;&lt;p&gt;this concepts is kinda similar to relational database $\to$ keep in mind that usually DB&amp;rsquo;s are complete (if a person isn&amp;rsquo;t in the student&amp;rsquo;s DB, he&amp;rsquo;s not a student ), while ABoxes aren&amp;rsquo;t and work with an &lt;strong&gt;Open World Assumption&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Type of Knowledge</title>
+      <link>http://localhost:1313/NotesWebsite/kr/type-of-knowledge/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/type-of-knowledge/</guid>
+      <description>&lt;p&gt;With all languages seen so far, knowledge is considered &lt;strong&gt;Static&lt;/strong&gt;&#xA;This is meaningful in many domains, but insufficient in the context of processes&lt;/p&gt;&#xA;&lt;p&gt;We need a way to deal with time and dynamic knowledge&lt;/p&gt;&#xA;&lt;h2 id=&#34;time&#34;&gt;Time&lt;/h2&gt;&#xA;&lt;p&gt;To deal with time we first have to decide if it&amp;rsquo;s&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;discrete&lt;/strong&gt; or &lt;strong&gt;continuous&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;linear&lt;/strong&gt; or &lt;strong&gt;branching&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;we will deal with time using $LTL_f$ (showcases the main ideas of temporal reasoning while still remaining pretty simple)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Extension of predicate rules</title>
       <link>http://localhost:1313/NotesWebsite/kr/extension-of-predicate-rules/</link>

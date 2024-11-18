@@ -6,8 +6,15 @@
     <description>Recent content in Computational Logic on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/computational-logic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Order Logic</title>
+      <link>http://localhost:1313/NotesWebsite/computational-logic/first-order-logic/</link>
+      <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/computational-logic/first-order-logic/</guid>
+      <description>&lt;h2 id=&#34;socrates-is-a-man&#34;&gt;All man are mortal&#xA;Socrates is a man&lt;/h2&gt;&#xA;&lt;p&gt;Socrates is mortal&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$\forall x (Man(x) \rightarrow Mortal(x))$&lt;/li&gt;&#xA;&lt;li&gt;$Man(Socrates)$&lt;/li&gt;&#xA;&lt;li&gt;$Mortal(Socrates)$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;First Order logic includes&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Names for objects &lt;code&gt;individual constants&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Names for operations &lt;code&gt;function symbols&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Names for properties and relations &lt;code&gt;operations&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;$\mathcal{l} = &amp;lt; \mathcal{F, P}, \alpha &amp;gt;$&#xA;where&#xA;$\mathcal{F}$ is the set of operation symbols&#xA;$\mathcal{P}$ is the set of predicates&#xA;$\alpha$ is a function which tells us how many arguments an operation can take&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Z3, basic notions and syntax</title>
       <link>http://localhost:1313/NotesWebsite/computational-logic/z3-lab-instructions/</link>
