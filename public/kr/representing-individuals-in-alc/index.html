@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Representing Individuals in ALC &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Representing Individuals in ALC</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="aboxes">ABoxes</h2>
+<p>Consider an infinite set $N_I$ of individual names, disjoint with $N_C \ \mbox{and} \ N_R$</p>
+<p>An <strong>Assertion</strong> is an expression of the form</p>
+<ul>
+<li>$C(a)$ where $a \in N_I$ and C is an $\mathcal{ALC}$ concept</li>
+<li>$r(a,b)$ where $a,b \in N_I$ and $r \in N_R$</li>
+</ul>
+<p>An assertion box <code>ABox</code> is a finite set of assertions</p>
+<p>this concepts is kinda similar to relational database $\to$ keep in mind that usually DB&rsquo;s are complete (if a person isn&rsquo;t in the student&rsquo;s DB, he&rsquo;s not a student ), while ABoxes aren&rsquo;t and work with an <strong>Open World Assumption</strong></p>
+<p>The interpretation function $\cdot^{\mathcal{I}}$ maps each $a \in N_I$ to an element $a^\mathcal{I} \in \Delta^\mathcal{I}$</p>
+<p>when does the interpretation satisfy my knowledge?
+$\mathcal{I}$ satisfies the assertion</p>
+<ul>
+<li>C(a) iff $a^\mathcal{I} \in C^{\mathcal{I}}$</li>
+<li>r(a, b) iff $(a^\mathcal{I}, b^{\mathcal{I}}) \in r^\mathcal{I}$
+$\mathcal{I}$ is a model of the ABox $\mathcal{A}$ if it satisfies all assertions in $\mathcal{A}$</li>
+</ul>
+<p>A KB is consistent iff it has a model
+we decide consistency by applying the tableau algorithm to a large initial set of assertions</p>
+<p>To make our algorithm more efficient we divide the problem into simpler cases</p>
+<p>Example, checking consistency between a TBox $\mathcal{T}$ and an ABox $\mathcal{A}$</p>
+<p>![[Lesson 1412.jpeg]]
+How do we apply the tableaux algorithm?</p>
+<h2 id="root-pre-completion-and-expansion">Root Pre-completion and expansion</h2>
+<ul>
+<li>Pre-completion: we apply all non generating rules (not $\exists$) until saturation</li>
+<li>Expansion: we apply the full tableaux to each pre-completed individual one at a time
+The KB ($\mathcal{T, A}$) is consistent iff the tableau algorithm produces a saturated and open ABox.</li>
+</ul>
+<p>The tableau algorithm, when successful, generates a forest-lie model <code>lots o' trees</code> with:</p>
+<ul>
+<li>A root system arbitrarily interconnected (ABox)</li>
+<li>Trees gorging from each element
+![[forest model]]
+<code>incredible drawing by rafael</code></li>
+</ul>
+<p>Nominals $\mathcal{O}$
+A nominal is a concept with exactly one element
+<code>the president of the USA</code>
+syntax: ${a}; a \in N_I$
+Examples:</p>
+<ul>
+<li>$EUCountry \sqsubseteq {austria} \sqcup {belgium} \sqcup . . . \sqcup {sweden}$</li>
+<li>$French \sqsubseteq \exists hasPresident.{macron}$ <code>if someone is french they have a oresudet which is macron</code></li>
+</ul>
+<h2 id="cardinality-constraints-mathcalq-n">Cardinality Constraints $\mathcal{Q, N}$</h2>
+<p>A cardinality constraint limits the number of successors of an object
+syntax; $\geq n r.C; n \in \mathbb{N},r \in N_R, \ C \ a \ concept$
+Examples:</p>
+<ul>
+<li>${bai} \sqsubseteq \neg(\geq 181hasStudent.\top)$</li>
+</ul>
+<h2 id="inverse-roles-mathcali">Inverse roles $\mathcal{I}$</h2>
+<p>Inverse roles allow to traverse role relations backwards
+syntax:$r^-, r \in N_R$
+Examples:</p>
+<ul>
+<li>$Male\sqcap \exists hasChild^-.\top \sqsubseteq Son$</li>
+<li>$\top \sqsubseteq \neg(\geq 3hasChild^-.\top)$ <code>class of individuals with 3 or more childrens</code></li>
+</ul>
+<h2 id="self">Self</h2>
+<p>used to describe a property of the object</p>
+<h2 id="transitivity-mathcals">Transitivity $\mathcal{S}$</h2>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-11-18
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

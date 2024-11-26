@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>From Concept to knowledge &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>From Concept to knowledge</h1>
+    </header>
+    <div class="content__body">
+        <p>so far we described concepts and their relationships</p>
+<p>How do we express knowledge?</p>
+<ul>
+<li>Trough constraints on the relevant interpretations (Tbox)</li>
+</ul>
+<p>A Tbox (terminological Box) is used to impose restrictions on the potential interpretation of concepts</p>
+<p>A ($\mathcal{EL}^\bot$) general concept inclusion <code>GCI</code> is an expression $C \sqsubseteq D$ with C and D $\mathcal{EL}^\bot$ concepts
+a TBox is a finite set of GCI&rsquo;s</p>
+<p>an interpretation $\mathcal{I}$ satisfies the GCI  $C \sqsubseteq D$ iff $C^{\mathcal{I}} \subseteq D^\mathcal{I}$</p>
+<p>$\mathcal{I}$ is a model of the TBox $\mathcal{T}$ is it satisfies all of the GCI&rsquo;s in T
+for example
+$A \sqsubseteq \exists r.B$</p>
+<p>in the presence of a tbox, reasoning is restricted to the class of models only</p>
+<ul>
+<li>Concept satisfiability: is there a model I of T such that $C^\mathcal{I} \neq \emptyset$</li>
+<li>Concept subsumption: does $C^\mathcal{I} \subseteq D^\mathcal{I}$  hold for all models  $\mathcal{I}$ of $\mathcal{T}$</li>
+<li>TBox consistency: Does $\mathcal{T}$ have a model?</li>
+</ul>
+<p>Keep in mind that concepts may be unsatisfiable <code>w.r.t. consistent TBoxes</code>
+$A \sqsubseteq \exists r.(A \sqcap B) \ \ \ \ A \sqcap B \sqsubseteq \bot$</p>
+<p>$\mathcal{T}$ has a trivial model but A is unsatisfiable</p>
+<blockquote>
+<p>$\Delta^\mathcal{I} = {\delta}$
+$A^\mathcal{I} = B^\mathcal{I} = \emptyset$
+$r^\mathcal{I} = \emptyset$</p>
+</blockquote>
+<blockquote>
+<p>$(A\sqcap B)^\mathcal{I}$ = $A^\mathcal{I} \wedge B^\mathcal{I} = \emptyset \subseteq \emptyset$</p>
+</blockquote>
+<p>$T \sqsubseteq A, \ A \sqsubseteq \bot$ is inconsistent</p>
+<p>C is subsumed by D iff for every model $\mathcal{I}, \ C^\mathcal{I} \subseteq D^\mathcal{I}$, meaning is not subsumed by D iff $\exists \mathcal{I} s.t. C^\mathcal{I} \not\subseteq D^\mathcal{I}$
+$\top$ is not subsumed by $\bot$ iff there exists a model $\mathcal{I}$ such that $\Delta^\mathcal{I} = \top^\mathcal{I} \not = \emptyset = \bot^\mathcal{I}$</p>
+<p>A concept is satisfiable iff C is not subsumed by $\bot \rightarrow$ we focus on subsumption</p>
+<h2 id="simplification-without-bot">Simplification without $\bot$</h2>
+<p>an $\mathcal{EL}$ toolbox is an $\mathcal{EL}^\bot$ TBox without $\bot$</p>
+<ul>
+<li><strong>Every $\mathcal{EL}$ TBox is consistent <code>as bottom isn't present</code></strong>
+<ul>
+<li>we can always build an interpretation $A^\mathcal{I} = {\delta}$ with $r^\mathcal{I} = {(\delta, \delta) }$</li>
+<li>Every $\mathcal{EL}$ concept is satisfiable w.r.t an $\mathcal{EL}$ TBox</li>
+</ul>
+</li>
+</ul>
+<h2 id="deciding-subsumption">Deciding Subsumption</h2>
+<p>Homomorphism approach doesn&rsquo;t necessarily work in the case of TBoxes</p>
+<ul>
+<li>GCI&rsquo;s add objects to concept trees</li>
+<li>How do we avoid building an infinite tree?
+We need a new algorithm based on consequence propagation $\rightarrow$ we combine 2 GCI&rsquo;s to derive a new one</li>
+</ul>
+<h2 id="a-gci-is-called-normal-form-if-it-has-one-of-these-shapes">A GCI is called normal form if it has one of these shapes</h2>
+<p>$A \sqsubseteq B$
+$A_1 \sqcap A_2 \sqsubseteq B$
+$A \sqsubseteq \exists r.B$
+$\exists r.A \sqsubseteq B$</p>
+<p><strong>A normal form GCI has at most one constructor and no conjunction in the right</strong>
+A TBox is in normal form if all GCI&rsquo;s contained are in normal form</p>
+<p>For example</p>
+<ul>
+<li>$Person \sqsubseteq \exists hasParent.Person$</li>
+<li>$Mammal \sqcap Oviparous \sqsubseteq Monotreme$</li>
+</ul>
+<p>GCI&rsquo;s in normal form are existential rules with constraints</p>
+<ul>
+<li>$A \sqsubseteq B \rightsquigarrow B(x) \leftarrow A(x)$</li>
+<li>$A_1 \sqcap A_2 \sqsubseteq \rightsquigarrow B(x) \leftarrow A_1(x), A_2(x)$</li>
+<li>$A \sqsubseteq \exists r.B$  <code>A must have an r successor (y) which belongs to B</code> $\rightsquigarrow r(x,y), B(y) \leftarrow A(x)$ <code>this is problematic as there are 2 predicates in the head</code> we write it with a new predicate such as $S_{b,r} (x,y) \leftarrow A(x)$  with $r(x,y) \leftarrow s_{r,b}(x,y) \ and \ B(y) \leftarrow S_{b,r}(x,y)$</li>
+</ul>
+<p>$Parent \sqsubseteq \exists hasChild.\top \rightsquigarrow hasChild(x,y) \leftarrow Parent(x)$ <code>in this case we do not need the previous construction as we dont care about the properties of the child</code></p>
+<p>$Mammal \sqcap Reptile \sqsubseteq \bot \rightsquigarrow \ \leftarrow Mammal(x), Reptile(x)$   this GCI is a constraint, as an object cant be both a Mammal and a Reptile</p>
+<p>Every TBox can be transformed into normal form just by applying normalisation rules
+$Normalisation \not = Restriction$
+$\hat{C}, \hat{D}$ are complex concepts, A is a new concept name</p>
+<ul>
+<li>$\hat{C} \sqsubseteq \hat{D} \rightsquigarrow \hat{C} \sqsubseteq A, A \sqsubseteq \hat{C}$</li>
+<li>$B \sqsubseteq C \sqcap D \rightsquigarrow B \sqsubseteq C , B \sqsubset D$</li>
+<li>$B \sqcap \hat{C} \sqsubseteq \rightsquigarrow B \sqcap A \sqsubseteq D, \hat{C} \sqsubset A$</li>
+<li>$\exists r.\hat{C} \sqsubseteq D \rightsquigarrow \exists r.A \sqsubseteq D, \hat{C} \sqsubset A$</li>
+<li>$D \sqsubseteq \exists r.\hat{C} \rightsquigarrow D\sqsubseteq \exists r.A, A \sqsubseteq \hat{C}$</li>
+</ul>
+<p>A conservative extension of a Tbox $\mathcal{T}$ such as $norm(\mathcal{T})$ adds more informations to
+$\mathcal{T}$ without modifying the information we already have</p>
+<p>To decide subsumption its sufficient to consider TBoxes in normal form</p>
+<p>A completion algorithm doesn&rsquo;t derive all consequences of $\mathcal{T}$ , but it derive all of the atomic subsumptions
+$A \sqsubseteq B$ with $A, B \in N_C \cup {\top, \bot}$</p>
+<h2 id="properties-of-bot">Properties of $\bot$</h2>
+<p>$\bot$ on the left is a contradiction
+$\bot$ on the right is more complex</p>
+<p>considering the TBox
+$A \sqsubseteq \exists r.B \ \ \ \ \ \ B \sqsubset \exists s.C \ \ \ \ \ C \sqsubseteq \bot$</p>
+<ul>
+<li>C cannot exists as no object belongs to C</li>
+<li>B cannot exists</li>
+<li>A cannot exists
+Then $A \sqsubseteq \bot$ meaning A has to be subsumed by $\bot$</li>
+</ul>
+<p>To prove completeness we need to show that f a consequence is not derived, then $\mathcal{T}$ doesn&rsquo;t entail it, to verify we build a model $\mathcal{I}$ of $\mathcal{I}$ s.t. $A^{\mathcal{I}} \not \subseteq B^{\mathcal{I}}$ <code>an object in A is not in B</code></p>
+<p>A completion algorithm generates consequences in normal form, if our TBox has $n$ symbols, then  the completion algorithm derives at most $n^3$ consequences <code>(polynomial time)</code></p>
+<h2 id="rule-application">Rule application</h2>
+<p>To apply a rule we have to find</p>
+<ul>
+<li>at most 2 consequences</li>
+<li>one GCI</li>
+</ul>
+<h2 id="mathcaleli">$\mathcal{ELI}$</h2>
+<p>Extension of $\mathcal{EL}$ that allows for inverse roles
+GCI&rsquo;s in $\mathcal{ELI}$ can also be understood as predicate rules</p>
+<ul>
+<li>$\exists r^-.A \sqsubseteq B \rightsquigarrow B(x) \leftarrow r(x,y),A(x)$
+$\mathcal{ELI}$ may look similar to $\mathcal{EL}$ but reasoning in it requires <strong>Exponential Time</strong></li>
+</ul>
+<h2 id="mathcalalc">$\mathcal{ALC}$</h2>
+<p>$\mathcal{EL}$ has no way to express negations</p>
+<p>we can see $\mathcal{ALC}$ as an extension of $\mathcal{EL}$ with the addition of negation $\neg$</p>
+<p>Abbreviations</p>
+<ul>
+<li>$\bot := A \sqcap \neg A$</li>
+<li>$\top := \neg \bot$</li>
+<li>$C \sqcup D := \neg(\neg C \sqcap \neg D)$</li>
+<li>$\forall r.C := \neg(\exists r.\neg C)$</li>
+</ul>
+<h3 id="value-restrictions">Value Restrictions</h3>
+<p>$Person \subseteq \forall hasChild.Person$ <code>every Child of a person has to be a person</code>
+$\forall hasAccess.Stairs \sqsubseteq Inacessible$ <code>every building with stairs as access is unaccessable, a building with no access at all still belongs to this constant as something with no access is till unacesible</code></p>
+<p>we can say a concept is in NNF if negations apply only to concept names, we also assume that all concepts are expressed in NNF</p>
+<p>for $\mathcal{ALC}$ we are gonna describe algorithms for deciding</p>
+<ul>
+<li>concept satisfiability</li>
+<li>TBox consistency</li>
+<li>KB consistency
+using a technique called tableaux <code>a tableaux is a model-constructing mechanism which works over a set of assertions</code></li>
+</ul>
+<p>To construct a model we decompose a concept into smaller parts</p>
+<h2 id="tableaux-algorithm">Tableaux algorithm</h2>
+<ul>
+<li>Assert C(a) <code>we start by asserting an element</code></li>
+<li>Decomposition using the Tableaux rules
+<ul>
+<li>Concepts are in negation normal form</li>
+<li>A Tableau rule takes an assertion from $\mathcal{A}$ and adds one or two assertions as follows
+<ul>
+<li>$\sqcap,  \ if \ C\sqcap D(x) \in \mathcal{A}, \ then \ add \ C(x), D(x) \ to \ \mathcal{A}$</li>
+<li>$\sqcap,  \ if \ C\sqcap D(x) \in \mathcal{A}, \ then \ add \ C(x), D(x) \ to \ \mathcal{A}$
+disjoint union is used to combine two interpretations ($\mathcal{I,J}$) into a new interpretation $\mathcal{I} \oplus \mathcal{J} =(\Delta^\mathcal{I} \cup \Delta^\mathcal{J}, \cdot^\mathcal{IJ})$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Applying the tableaux algorithm to check if a concept is satisfiable
+$A \sqcap \exists r.(A \sqcap \neg C)\sqcap \forall r.(\neg A \sqcup B)$</p>
+<p>We apply the conjunction rule
+${A(a), \exists r.(A\sqcap \neg C)(a), \forall r.(\neg A \sqcup B)(a)}$</p>
+<p>${A(a), r(a,b), A \sqcap \neg C(b), \forall(\neg A \sqcup B) (a)}$ we simplify the <code>exists</code> using the tableaux rules</p>
+<p>${A(a), r(a,b), A(b), \neg C(b), \forall(\neg A \sqcup B) (a)}$ we apply the conjunction rule to the first conjunction</p>
+<p>${A(a), r(a,b), A(b), \neg C(b), \neg A \sqcup B(b)}$ we simplify the <code>forall</code> using the tableaux rule</p>
+<p>${A(a), r(a,b), A(b), \neg C(b), \neg A(b)}$ we simplify the disjunction using the disjunction  tableaux rule by trying to remove <code>B(b)</code>, this leads to a contradiction as the object B must belong to both $A \ and \ \neg A$</p>
+<p>${A(a), r(a,b), A(b), \neg C(b), B(b)}$ we simplify the disjunction using the disjunction  tableaux rule by trying to remove $\neg A(b)$, this leads to no contradiction</p>
+<p><strong>A Concept C is satisfiable if the tableaux algorithm yields a saturated and open set of assertions</strong></p>
+<p>Starting from a saturated and open set $\mathcal{A}$ how do we construct an interpretation $\mathcal{I_A} = (\Delta^{\mathcal{I_A}},\cdot^\mathcal{I_A})$</p>
+<p>Referring to the previous example:
+${A(a), r(a,b), A(b), \neg C(b), B(b)} \rightarrow$ Open set of assertions $\mathcal{A}$</p>
+<p>Interpretation:
+$\Delta^\mathcal{I} ={a,b}$
+$A^\mathcal{I} ={a,b}$
+$B^\mathcal{I} ={a,b}$
+$C^\mathcal{I} = \emptyset$
+$r^\mathcal{I} ={a,b}$ <code>all the pairs which are explicitly stated in the set of assertions</code></p>
+<ul>
+<li>if $\neg A(a) \in \mathcal{A}, since \ \mathcal{A} \ is \ open,\  then \ A(a) \not \in \mathcal{A}$
+If the tableaux gives an open and saturated set $\mathcal{A}$ then C is satisfiable <code>C is sound</code></li>
+</ul>
+<p>we still have to check for completeness</p>
+<p>We have to make the right choice in the disjunction rule</p>
+<p>if $\mathcal{I}$ satisfies $\mathcal{A}$ and a rule application on $\mathcal{A}$ yields $\mathcal{B}$, then $\mathcal{I}$ satisfies $\mathcal{B}$</p>
+<p>Case analysis for single rules:
+$\sqcap$ if $\mathcal{I}$ satisfies $C \sqcap D(a)$ then $\mathcal{I}$ satisfies $C(a)$ and $D(a)$
+$\sqcup$ if $\mathcal{I}$ satisfies $C \sqcup D(a)$ then choose to add $C(a)$ to the assertions. $\mathcal{I}$ satisfies $C(a)$
+$\exists$ if $\mathcal{I}$ satisfies $\exists r.C(a)$ then $\mathcal{I}$ satisfies $r(a,b)$ and $C(a)$
+$\forall$ if $\mathcal{I}$ satisfies $C \sqcap D(a)$ then $\mathcal{I}$ satisfies $C(a)$ and $D(a)$ <code>ancora da sistemare. sbagiato, guarda gli appunti :|</code></p>
+<p>The tableaux algorithm doesn&rsquo;t consider GCI&rsquo;s</p>
+<p>the GCI $C \sqsubseteq D$ is equivalent to $\top \sqsubseteq \neg C \sqcup D$
+Every element of the domain must belong to $\neg C \sqcup D$</p>
+<p>consider the TBox $\mathcal{T}$ with two GCIs
+$A\sqsubseteq B \sqcap \forall r.A$
+$B \sqsubseteq \exists r.\neg A$</p>
+<p>is this TBox consistent?
+if we try constructing models:
+if we start from the first GCI we have an element with an r successor to $\neg A$ but all it&rsquo;s r successor must go to A <code>we cannot construct a model</code></p>
+<p>if we start from the second GCI we are able to construct a model
+this way isn&rsquo;t very efficient as the result we get depends on the order we follow to construct the model</p>
+<p>to decide satisfiability and consistency in a better way we can apply the tableaux rules
+<strong>we need to add a new rule to the tableaux</strong> $\to$ subsumption rule</p>
+<ul>
+<li>$\sqsubseteq$    if $C \sqsubseteq D \in \mathcal{T}$ and $x$ appears in $\mathcal{A}$, add $\neg C \sqcup D(x)$ to $\mathcal{A}$
+we still have to transform everything to NNF</li>
+</ul>
+<p>example
+consider the TBox $\top \sqsubseteq \exists r.\top$ <code>everybody has an r successor</code></p>
+<p>$\top(a) \xrightarrow{\sqsubseteq} \exists r.\top(a)$</p>
+<p>if we keep applying the algorithm we just get an infinite sequence of nodes, but they&rsquo;re all the same $\to$ after recognizing a pattern, further enumeration is no longer informative</p>
+<p>![[cycle]]
+The cycle isn&rsquo;t mean to represent a cyclic model, it gives the instruction on how to construct a found pattern</p>
+<ul>
+<li>If the cyclic pattern is contradiction free, then the unfolded model is also without contradiction
+This doesn&rsquo;t construct a model, it&rsquo;s just helpful to test for satisfiability</li>
+</ul>
+<hr>
+<h1 id="blocking">Blocking</h1>
+<p>The set of assertions is seen as a Tree
+![[tree]]
+Every node will then have a set of cons such as
+$Cons(a) = {\forall s.C, B}$ ,A</p>
+<h2 id="blocking-1">Blocking</h2>
+<ul>
+<li>The node a is blocked by the node b in $\mathcal{A}$ iff
+<ul>
+<li>b is a non-root predecessor of a and</li>
+<li>$Cons_\mathcal{A}(a) \subseteq Cons_{\mathcal{A}}(b)$
+with this new &lsquo;blocking&rsquo; concept we can modify all the rules in the tableaux which create new objects $\to$ in this case we modify only the existential rule</li>
+</ul>
+</li>
+<li>the $\exists$ rule is only applicable to $\exists r.C(a)$ only if a isn&rsquo;t blocked and none of it&rsquo;s predecessor are blocked</li>
+</ul>
+<p>Example</p>
+<p>insert pic
+![[Lesson 1411.jpeg]]
+every cons that appears in d also appears in b, meaning $Cons(d)\subseteq Cons(a)$
+d is blocked</p>
+<p>Can blocking guarantee that no infinite derivations are possible?</p>
+<p>if $\mathcal{T}$ has n subconcepts. there are a most $2^n$ different sets $Cons_\mathcal{A}$
+The tree generated by the tableau has depth which is at most $2^n + 2$ and finite width, which is the number of $\exists r.C$ subconcepts</p>
+<p><strong>in theory, to decide TBox consistency exponential time is needed</strong>
+in practice, we&rsquo;ll work on TBoxes constructed by humans, which behave in a simpler way</p>
+<h2 id="other-problems">Other problems</h2>
+<ul>
+<li>Satisfiability: to check if C is satisfiable we start the tableau algorithm starting with ${C(a)}$</li>
+<li>Subsumption: $\mathcal{T} \vDash C \sqsubseteq D \ \mbox{iff} \ \ C\sqcap \neg D$$ is unsatisfiable</li>
+</ul>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-11-18
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

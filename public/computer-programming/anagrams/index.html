@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Computer Programming &ndash; My Notes</title>
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Anagrams Exercise &ndash; My Notes</title>
 <meta name="description" content="Check out my socials">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,9 +27,24 @@
 
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/NotesWebsite/computer-programming/index.xml" title="My Notes">
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
 </head>
 
     <body>
@@ -58,29 +73,38 @@
 </header>
 
             <section class="page__body">
-    <h1 id="computer-programming">Computer Programming</h1>
+    <header class="content__header">
+        <h1>Anagrams Exercise</h1>
+    </header>
+    <div class="content__body">
+        <p>Exercise from
+<a href='https://greenteapress.com/thinkpython2/html/index.html'>Think Python, 2nd Edition</a>
+by Allen Downey</p>
+<p>Write a program that reads a word list from a file (see Section 9.1) and prints all the sets of words that are anagrams.
+Here is an example of what the output might look like:
+[&lsquo;deltas&rsquo;, &lsquo;desalt&rsquo;, &rsquo;lasted&rsquo;, &lsquo;salted&rsquo;, &lsquo;slated&rsquo;, &lsquo;staled&rsquo;]
+[&lsquo;retainers&rsquo;, &rsquo;ternaries&rsquo;]
+[&lsquo;generating&rsquo;, &lsquo;greatening&rsquo;]
+[&lsquo;resmelts&rsquo;, &lsquo;smelters&rsquo;, &rsquo;termless&rsquo;]</p>
+<pre tabindex="0"><code>words = open(&#39;words.txt&#39;).read().split(&#39;\n&#39;)
 
-    
+def Anagrams(list, word):
+    d = dict()
+    for x in range(len(list) -1):
+            if tuple(sorted(tuple(list[x]))) in d: # list[x] is first made in to a tuple s.t. &#39;exp&#39; becomes (&#39;e&#39;, &#39;x&#39;, &#39;p&#39;), it&#39;s then ordered to (&#39;e&#39;, &#39;p&#39;, &#39;x&#39;), it is then \
+                  # made again into a tuple as sorted returns a list but the dictionary key cannot be one
 
-    <ul>
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computer-programming/anagrams/">Anagrams Exercise</a></li>
+                  d[tuple(sorted(tuple(list[x])))].append(list[x])  # case in which the key already exist
+            else:  # case in which the key doesnt exists
+                  d[tuple(sorted(tuple(list[x])))] = [] # create an empty list in the key
+                  d[tuple(sorted(tuple(list[x])))].append(list[x]) # append the first value to the empty list
 
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computer-programming/estimatepi/">Estimate PI</a></li>
+    return d[tuple(sorted(tuple(word)))]
 
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computer-programming/ngonexercise/">Exercise 4.3</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computer-programming/breakfastex/">Exercise 2.2.3</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computer-programming/books/">Introduction to Computer Programming</a></li>
-
-    
-    </ul>
-
+print(Anagrams(words, &#39;deltas&#39;))
+</code></pre>
+    </div>
+    <footer class="content__footer"></footer>
 
             </section>
 
@@ -112,6 +136,14 @@
 </div>
                 <hr>
                 <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-11-26
+        </p>
+    
+
     
 
                 </div>

@@ -6,8 +6,15 @@
     <description>Recent content on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anagrams Exercise</title>
+      <link>http://localhost:1313/NotesWebsite/computer-programming/anagrams/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/computer-programming/anagrams/</guid>
+      <description>&lt;p&gt;Exercise from&#xA;&lt;a href=&#39;https://greenteapress.com/thinkpython2/html/index.html&#39;&gt;Think Python, 2nd Edition&lt;/a&gt;&#xA;by Allen Downey&lt;/p&gt;&#xA;&lt;p&gt;Write a program that reads a word list from a file (see Section 9.1) and prints all the sets of words that are anagrams.&#xA;Here is an example of what the output might look like:&#xA;[&amp;lsquo;deltas&amp;rsquo;, &amp;lsquo;desalt&amp;rsquo;, &amp;rsquo;lasted&amp;rsquo;, &amp;lsquo;salted&amp;rsquo;, &amp;lsquo;slated&amp;rsquo;, &amp;lsquo;staled&amp;rsquo;]&#xA;[&amp;lsquo;retainers&amp;rsquo;, &amp;rsquo;ternaries&amp;rsquo;]&#xA;[&amp;lsquo;generating&amp;rsquo;, &amp;lsquo;greatening&amp;rsquo;]&#xA;[&amp;lsquo;resmelts&amp;rsquo;, &amp;lsquo;smelters&amp;rsquo;, &amp;rsquo;termless&amp;rsquo;]&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;words = open(&amp;#39;words.txt&amp;#39;).read().split(&amp;#39;\n&amp;#39;)&#xA;&#xA;def Anagrams(list, word):&#xA;    d = dict()&#xA;    for x in range(len(list) -1):&#xA;            if tuple(sorted(tuple(list[x]))) in d: # list[x] is first made in to a tuple s.t. &amp;#39;exp&amp;#39; becomes (&amp;#39;e&amp;#39;, &amp;#39;x&amp;#39;, &amp;#39;p&amp;#39;), it&amp;#39;s then ordered to (&amp;#39;e&amp;#39;, &amp;#39;p&amp;#39;, &amp;#39;x&amp;#39;), it is then \&#xA;                  # made again into a tuple as sorted returns a list but the dictionary key cannot be one&#xA;&#xA;                  d[tuple(sorted(tuple(list[x])))].append(list[x])  # case in which the key already exist&#xA;            else:  # case in which the key doesnt exists&#xA;                  d[tuple(sorted(tuple(list[x])))] = [] # create an empty list in the key&#xA;                  d[tuple(sorted(tuple(list[x])))].append(list[x]) # append the first value to the empty list&#xA;&#xA;    return d[tuple(sorted(tuple(word)))]&#xA;&#xA;print(Anagrams(words, &amp;#39;deltas&amp;#39;))&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     <item>
       <title>From Concept to knowledge</title>
       <link>http://localhost:1313/NotesWebsite/kr/from-concept-to-knowledge-in-el/</link>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>First Order Logic &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>First Order Logic</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="socrates-is-a-man">All man are mortal
+Socrates is a man</h2>
+<p>Socrates is mortal</p>
+<ul>
+<li>$\forall x (Man(x) \rightarrow Mortal(x))$</li>
+<li>$Man(Socrates)$</li>
+<li>$Mortal(Socrates)$</li>
+</ul>
+<p>First Order logic includes</p>
+<ul>
+<li>Names for objects <code>individual constants</code></li>
+<li>Names for operations <code>function symbols</code></li>
+<li>Names for properties and relations <code>operations</code></li>
+</ul>
+<p>$\mathcal{l} = &lt; \mathcal{F, P}, \alpha &gt;$
+where
+$\mathcal{F}$ is the set of operation symbols
+$\mathcal{P}$ is the set of predicates
+$\alpha$ is a function which tells us how many arguments an operation can take</p>
+<ul>
+<li>$\alpha(+) = 2$ <code>the sum takes 2 arguments (numbers)</code></li>
+<li>$\alpha(\pi) = 0$  <code>Pi doesn't take anything as an argument</code></li>
+</ul>
+<p>whenever we start solving a problem in First Oder Logic we must declare a language</p>
+<hr>
+<ul>
+<li>Terms <code>used to indicate objects</code>
+<ul>
+<li>Terms without variables are known as <code>Ground Terms</code></li>
+</ul>
+</li>
+<li>Formulae <code>used for assertions</code>
+<ul>
+<li>formulae are obtaining applying predicates to terms and then connectives ($\wedge, \vee, \neg, \rightarrow$) and quantifications ($\forall, \exists$)</li>
+</ul>
+</li>
+</ul>
+<p>for example</p>
+<ul>
+<li>$x + y - 3 \ or \ 3\cdot 5$ are terms, as they both represent a number <code>terms are built ul using variables, constants and operators</code></li>
+</ul>
+<p>Formal definition of a formula</p>
+<ul>
+<li>if $P \in \mathcal{P}, \alpha(P) = n, \ and \ t_1,&hellip;,t_n \ are \ terms, \ then \ P(t_1,&hellip;,t_n) \ is \ a \ formula$ <code>definition for atomic formulae</code></li>
+<li>if A, B are formulae, so are $(A\wedge B), (A \vee B), (A \rightarrow B), (\neg A)$</li>
+<li>if x is a variable and A is a formula, $(\exists x A) (\forall x A)$ are formulae</li>
+</ul>
+<h3 id="example">Example</h3>
+<pre tabindex="0"><code>suppose your langueage has a binary function symbol F, a unary predicate P and constant a,b.
+Write down a ground term, a non ground term, a ground atomic formula, a non ground literal in this language
+</code></pre><ul>
+<li>Ground terms = $a, b, f(a,a), f(b,b)$</li>
+<li>Non ground terms = $f(x,a) , f(x,y)$</li>
+<li>Ground atomic formulae =
+An occurrence of a variable is bound iff it&rsquo;s located inside of a subformula of the kind $\forall x B \exists x B-$</li>
+</ul>
+<p>A formula is open iff it does not have quantifiers
+A formula is universal iff it&rsquo;s of the kind $\forall x_1,&hellip;,\forall x_n A$ where A is open
+a formula is existential iff it&rsquo;s of the kind $\exists x_1,&hellip;,\exists x_n A$ where A is open</p>
+<h2 id="substitution-at_1x_1t_nx_n">Substitution $A(t_1/x_1,&hellip;,t_n/x_n)$</h2>
+<p>Y mean the formula obtained from A by replacing the free variable only</p>
+<p>for example
+$\forall x R(x,a) \rightarrow Q(x)$, we replace x with f(y)
+$\forall x R(x,a) \rightarrow Q(f(y)$ first x isn&rsquo;t replaced as it&rsquo;s ground</p>
+<p>instance: remove the universal quantifier and replace the quantified variable with a term
+Instantiation can be dangerous if it&rsquo;s used with non ground terms</p>
+<p>$\forall x \exists y(x,y) \rightsquigarrow \exists y(y,y)$  this is wrong, because of the presence of non ground terms</p>
+<p>to deal with these cases we have to remove the bounded variable, in a way that the term which has to be replaced doesn&rsquo;t contain it.</p>
+<p><code>this will not happen in the exeercises as we will only work with ground cases</code> $\rightarrow$ <code>keep it in mind but dont stress about it :)</code></p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-11-08
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
