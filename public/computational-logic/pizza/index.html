@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Computational Logic &ndash; My Notes</title>
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Exercise: In pizzeria &ndash; My Notes</title>
 <meta name="description" content="Check out my socials">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,9 +27,24 @@
 
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/NotesWebsite/computational-logic/index.xml" title="My Notes">
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
 </head>
 
     <body>
@@ -58,32 +73,33 @@
 </header>
 
             <section class="page__body">
-    <h1 id="computational-logic">Computational Logic</h1>
-
-    
-
-    <ul>
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computational-logic/pizza/">Exercise: In pizzeria</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computational-logic/tetravex/">Exercise: Tetravex</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computational-logic/exercise-square-frame/">Exercise: Square Frame</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computational-logic/first-order-logic/">First Order Logic</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computational-logic/z3-lab-instructions/">Z3, basic notions and syntax</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/computational-logic/computational-logic-from-sat-to-smt/">Computational Logic, From SAT to SMT</a></li>
-
-    
-    </ul>
-
+    <header class="content__header">
+        <h1>Exercise: In pizzeria</h1>
+    </header>
+    <div class="content__body">
+        <h1 id="in-pizzeria">In pizzeria</h1>
+<p>Exercise on <a href ='https://drive.google.com/drive/u/1/folders/1kL-sjIOiib0rL_7T1OGVIvJnYWH2_Jnh'>Drive</a> <br>
+The customers have been named from a to f, starting from the top left</p>
+<pre tabindex="0"><code>(declare-const a Real)
+(declare-const b Real)
+(declare-const c Real)
+(declare-const d Real)
+(declare-const e Real)
+(declare-const f Real)
+(assert(= (+ a b) (+ e f)))
+(assert(&lt; b a))
+(assert(or (= c 9.5)(= c 7.5)(= c 8.5)(= c 7)))
+(assert(or (= d 9)(= d 9.5)))
+(assert(or (= e 9)(= e 9.5)))
+(assert(or (= f 9)(= f 7)))
+(assert(or (= a 9.5)(= a 7.5)(= a 8.5)(= a 7)(= a 8)(= a 9)))
+(assert(or (= b 9.5)(= b 7.5)(= b 8.5)(= b 7)(= b 8)(= b 9)))
+(assert(distinct a b c d e f))
+(check-sat)
+(get-value(a b c d e f))
+</code></pre>
+    </div>
+    <footer class="content__footer"></footer>
 
             </section>
 
@@ -115,6 +131,14 @@
 </div>
                 <hr>
                 <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-12-10
+        </p>
+    
+
     
 
                 </div>

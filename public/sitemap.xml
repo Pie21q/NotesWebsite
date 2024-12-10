@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/NotesWebsite/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/pizza/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/tetravex/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/exercise-square-frame/</loc>
+    <lastmod>2024-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computer-programming/anagrams/</loc>
     <lastmod>2024-11-26T00:00:00+00:00</lastmod>
@@ -25,9 +37,6 @@
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/kr/type-of-knowledge/</loc>
     <lastmod>2024-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
-    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computational-logic/first-order-logic/</loc>
     <lastmod>2024-11-08T00:00:00+00:00</lastmod>

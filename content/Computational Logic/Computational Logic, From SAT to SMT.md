@@ -36,7 +36,7 @@ In Logic this couldn't work, so implication takes a meaning similar to the one p
 
 ==The only way i can falsify an implication is making the antecedent true and the other true
 
-$A \rightarrow B \ can  \ be \ false \ exclusively \ when  \ A  \ is \ false $
+$A \rightarrow B \ can  \ be \ false \ exclusively \ when  \ A  \ is \ false$
 
 we can define implication as 
 $$ V(\neg A \vee B) = V(\neg(A \vee \neg B)) $$
