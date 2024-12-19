@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Sequences and Series &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Sequences and Series</h1>
+    </header>
+    <div class="content__body">
+        <p>list of numbers written in a specific order</p>
+<p>$\lim_{n \to \infty} a_n = L$ <code>the value of the series approaches L as n approaches infinity</code></p>
+<p>We can find the limit of a series just by treating it as the limit of a function</p>
+<h2 id="convergent-and-divergent-series">Convergent and Divergent Series</h2>
+<ul>
+<li>If the sequence of partial sums is convergent (has finite limits), then we can refer to the series as convergent and if $\lim_{n \to \infty} s_n = s, then \ \sum^\infty_{i=1}a_i = s$ .</li>
+<li>If the sequence of partial sums is divergent (limit doesn&rsquo;t exist or goes to $\pm \infty$), then the series is also called divergent</li>
+</ul>
+<p>To define convergence we can just compute the limit of the general formula of a series: This can prove to be quite difficult, as finding the general formula can be pretty hard</p>
+<p>To more easily find the convergence of a series, we can make use of some test</p>
+<h2 id="comparison-test">Comparison Test</h2>
+<p>given the series $\sum a_n$ and $\sum b_n$ with $a_n,b_n \geq 0 \forall n \ and \ a_n \leq b_n \forall n$ then</p>
+<ul>
+<li>if $\sum b_n$ is convergent, then so is $\sum a_n$</li>
+<li>if $\sum a_n$ is divergent, then so is $\sum b_n$</li>
+</ul>
+<h2 id="ratio-test">Ratio Test</h2>
+<p>given the series $\sum a_n$ , we define $L= \lim_{n \to \infty} |\frac{a_{n+1}}{a_n}|$  , we can then find $a_{n+1}$ by substituting n with n+1 and compute the limit in order to find L.</p>
+<ul>
+<li>if L &lt; 1 the series is absolutely convergent</li>
+<li>if L &gt; 1 he series is divergent</li>
+<li>if L = 1 the series may be divergent, conditionally convergent or absolutely convergent</li>
+</ul>
+<h2 id="root-test">Root Test</h2>
+<p>given the series $\sum a_n$, we define $L = \lim_{n \to \infty} \sqrt[n]{|a_n|} =\lim_{n \to \infty} |a_n|^{\frac{1}{n}}$
+after computing the limit and finding L</p>
+<ul>
+<li>if L &lt; 1 the series is absolutely convergent</li>
+<li>if L &gt; 1 he series is divergent</li>
+<li>if L = 1 the series may be divergent, conditionally convergent or absolutely convergent
+keep in mind that $\lim_{n \to \infty} n^{\frac{1}{n}} = 1$</li>
+</ul>
+<p>Permanence of sign for sequences</p>
+<ol>
+<li>if $a_n \to l$ and $a_n \geq 0 \ \forall n$ then $l \geq 0$</li>
+<li>if $l &gt; 0$  and $a_n \to l$ then $\exists n_0 \ s.t.\ \forall n \geq n_0, a_n &gt; 0$
+Proof:</li>
+<li>The limit $l$ can&rsquo;t be $&lt; 0$, otherwise $\exists \mathcal{E} \ s.t. \ I_{\mathcal{E}}(l)$ and such neighbor doesn&rsquo;t contain any of the $a_n$, so $l$ cannot be the limit, thus $l \geq 0$</li>
+<li>considering $\mathcal{E} = \frac{l}{2}$, Then, since $l$ is limit of $a_n$, $\exists n_0 \ s.t. \ \forall n \geq n_0, a_n \in I_\mathcal{E} (l)$. But $I_\mathcal{E}(l) \ c (0, + \infty)$ so $a_n &gt;0 \ \forall n \geq n_0$</li>
+</ol>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-12-19
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

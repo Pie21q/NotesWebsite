@@ -6,8 +6,15 @@
     <description>Recent content in Calculus on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/calculus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sequences and Series</title>
+      <link>http://localhost:1313/NotesWebsite/calculus/sequences-and-series/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/calculus/sequences-and-series/</guid>
+      <description>&lt;p&gt;list of numbers written in a specific order&lt;/p&gt;&#xA;&lt;p&gt;$\lim_{n \to \infty} a_n = L$ &lt;code&gt;the value of the series approaches L as n approaches infinity&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;We can find the limit of a series just by treating it as the limit of a function&lt;/p&gt;&#xA;&lt;h2 id=&#34;convergent-and-divergent-series&#34;&gt;Convergent and Divergent Series&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If the sequence of partial sums is convergent (has finite limits), then we can refer to the series as convergent and if $\lim_{n \to \infty} s_n = s, then \ \sum^\infty_{i=1}a_i = s$ .&lt;/li&gt;&#xA;&lt;li&gt;If the sequence of partial sums is divergent (limit doesn&amp;rsquo;t exist or goes to $\pm \infty$), then the series is also called divergent&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To define convergence we can just compute the limit of the general formula of a series: This can prove to be quite difficult, as finding the general formula can be pretty hard&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Some Definitions</title>
       <link>http://localhost:1313/NotesWebsite/calculus/some-definitions/</link>

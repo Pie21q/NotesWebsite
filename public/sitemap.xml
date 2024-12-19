@@ -3,9 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/NotesWebsite/</loc>
-    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/calculus/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/calculus/sequences-and-series/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/balls/</loc>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/cdcl/</loc>
     <lastmod>2024-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computational-logic/pizza/</loc>
@@ -64,9 +76,6 @@
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computational-logic/z3-lab-instructions/</loc>
     <lastmod>2024-10-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/NotesWebsite/calculus/</loc>
-    <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/calculus/some-definitions/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>

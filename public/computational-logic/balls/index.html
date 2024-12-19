@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Exercise: Ball &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Exercise: Ball</h1>
+    </header>
+    <div class="content__body">
+        <pre tabindex="0"><code>(define-fun PRE ((b Int) (w Int)) Bool (and (= b 9) (= w 10)))
+(define-fun POST   ((b Int) (w Int)) Bool (and (= b 1) (= w 0)))
+
+(define-fun TRANS 
+            ((b Int) (w Int) (bp Int) (wp Int)) Bool
+             (and (&lt;= 0 bp) (&lt;= 0 wp)
+              (or 
+                 (and (= bp ( + b 1))(= wp (- w  2)))
+                 (= bp (- b 1))
+                 (= bp (- b 1))
+              )
+             )
+            )  
+
+
+
+(declare-const x0 Int )
+(declare-const y0 Int)
+
+
+(declare-const x1 Int )
+(declare-const y1 Int)
+
+(declare-const x2 Int )
+(declare-const y2 Int)
+
+(declare-const x3 Int )
+(declare-const y3 Int)
+
+(declare-const x4 Int )
+(declare-const y4 Int)
+
+
+(declare-const x5 Int )
+(declare-const y5 Int)
+
+
+(declare-const x6 Int )
+(declare-const y6 Int)
+
+
+(declare-const x7 Int )
+(declare-const y7 Int)
+
+
+(declare-const x8 Int )
+(declare-const y8 Int)
+
+
+(declare-const x9 Int )
+(declare-const y9 Int)
+
+
+(declare-const x10 Int )
+(declare-const y10 Int)
+
+
+(declare-const x11 Int )
+(declare-const y11 Int)
+
+
+(declare-const x12 Int )
+(declare-const y12 Int)
+
+(declare-const x13 Int )
+(declare-const y13 Int)
+
+(declare-const x14 Int )
+(declare-const y14 Int)
+
+(declare-const x15 Int )
+(declare-const y15 Int)
+
+(declare-const x16 Int )
+(declare-const y16 Int)
+
+(declare-const x17 Int )
+(declare-const y17 Int)
+
+(declare-const x18 Int )
+(declare-const y18 Int)
+
+(declare-const x19 Int )
+(declare-const y19 Int)
+
+(declare-const x20 Int )
+(declare-const y20 Int)
+
+(declare-const x21 Int )
+(declare-const y21 Int)
+
+(declare-const x22 Int )
+(declare-const y22 Int)
+
+(declare-const x23 Int )
+(declare-const y23 Int)
+
+(declare-const x24 Int )
+(declare-const y24 Int)
+
+(declare-const x25 Int )
+(declare-const y25 Int)
+
+
+
+(assert (PRE x0 y0 ) )
+
+
+(assert (TRANS x0 y0 x1 y1 ) )
+(assert (TRANS x1 y1 x2 y2 ) )
+(assert (TRANS x2 y2 x3 y3 ) )
+(assert (TRANS x3 y3 x4 y4 ) )
+(assert (TRANS x4 y4 x5 y5 ) )
+(assert (TRANS x5 y5 x6 y6 ) )
+(assert (TRANS x6 y6 x7 y7 ) )
+(assert (TRANS x7 y7 x8 y8 ) )
+(assert (TRANS x8 y8 x9 y9 ) )
+(assert (TRANS x9 y9 x10 y10 ) )
+
+
+
+
+
+
+
+
+(assert (POST x10 y10 ) )
+
+
+
+(check-sat)
+
+(echo &#34; &#34;)
+(echo &#34;step 0&#34;)
+(eval x0)
+(eval y0)
+(echo &#34; &#34;)
+(echo &#34;step 1&#34;)
+(eval x1)
+(eval y1)
+(echo &#34; &#34;)
+(echo &#34;step 2&#34;)
+(eval x2)
+(eval y2)
+(echo &#34; &#34;)
+(echo &#34;step 3&#34;)
+(eval x3)
+(eval y3)
+(echo &#34; &#34;)
+(echo &#34;step 4&#34;)
+(eval x4)
+(eval y4)
+(echo &#34; &#34;)
+(echo &#34;step 5&#34;)
+(eval x5)
+(eval y5)
+(echo &#34; &#34;)
+(echo &#34;step 6&#34;)
+
+
+
+(eval x6)
+(eval y6)
+
+(echo &#34; &#34;)
+(echo &#34;step 10&#34;)
+
+
+
+(eval x10)
+(eval y10)
+</code></pre>
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-12-11
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
