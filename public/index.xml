@@ -6,8 +6,15 @@
     <description>Recent content on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exams Theory Questions</title>
+      <link>http://localhost:1313/NotesWebsite/computational-logic/questions/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/computational-logic/questions/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Distinguere e caratteristiche CNF &#xA;-Conjunctive Normal Form, Set of clauses made up of disjunction&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;come trasformo NNF a CNF e viceversa &#39;&#xA;-Transformation between NNF and CNF is done through distribution rules&#xA;$$(C \wedge D)\vee F := (C \vee F) \wedge (D \vee F)$$&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;mark style=&#34;background-color: lightblue&#34;&gt;cosa dice l’herbrand theorem, cosa implica, come si usa  &lt;/mark&gt;&#xA;A set of universal sentences T is unsatisfiable (in predicate logic) iff there is a finite set of instances of formulae in T whose propositional abstraction is unsatisfiable (in propositional logic)&#xA;To Check for satisfiability we have to consider all constants which are present in the Herbrand&amp;rsquo;s universe (These are infinite, so we have to consider just the ones which are relevant to the resolution of the problem)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Sequences and Series</title>
       <link>http://localhost:1313/NotesWebsite/calculus/sequences-and-series/</link>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Exams Theory Questions &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Exams Theory Questions</h1>
+    </header>
+    <div class="content__body">
+        <ul>
+<li>
+<p>Distinguere e caratteristiche CNF 
+-Conjunctive Normal Form, Set of clauses made up of disjunction</p>
+</li>
+<li>
+<p>come trasformo NNF a CNF e viceversa '
+-Transformation between NNF and CNF is done through distribution rules
+$$(C \wedge D)\vee F := (C \vee F) \wedge (D \vee F)$$</p>
+</li>
+<li>
+<p><mark style="background-color: lightblue">cosa dice l’herbrand theorem, cosa implica, come si usa  </mark>
+A set of universal sentences T is unsatisfiable (in predicate logic) iff there is a finite set of instances of formulae in T whose propositional abstraction is unsatisfiable (in propositional logic)
+To Check for satisfiability we have to consider all constants which are present in the Herbrand&rsquo;s universe (These are infinite, so we have to consider just the ones which are relevant to the resolution of the problem)</p>
+</li>
+<li>
+<p>una variable come fa ad essere bounded / free? 
+We call a variable which is preceded by constructors such as $\forall \ or \ \exists$ <strong>Bounded</strong>, a variable which isn&rsquo;t bounded is free
+- $x$ is free
+- $\exists x$ is bounded
+In the formula $\forall x R(x, f(x), y) \vee R (x, f(x), y)$
+- In the first half $x$ is bounded by $\forall xR$ , this applies to both $x$&rsquo;s, while $y$ isn&rsquo;t bounded and is therefore free
+- In the second half $x$ is no longer bounded, and the same is true for $y$, meaning both are free</p>
+</li>
+<li>
+<p>Cosè un term e un literal? 
+- Terms are used to describe objects, they are made up of just the basic elements of a language and don&rsquo;t contain logic operators
+-Terms can be variables, constants and functions</p>
+</li>
+<li>
+<p>cos’è una ground instance 
+in an universal sentence, ground instances are the sentences of the kind $A(t_1/x_1, t_n / x_n)$, where $t$ are ground terms</p>
+</li>
+<li>
+<p>cos’e un ground term 
+A ground term is a term made up of constant&rsquo;s</p>
+</li>
+<li>
+<p>cosa significa skolemizzare 
+Skolemization is used to remove existential quantifiers from a set of clauses in PNX by substituting them with a skolem function $f$ of arity equal to the number of universal quantifiers to the left of the existential one</p>
+</li>
+<li>
+<p>cos’è una T-conflict rule, perchè, quando la uso e come la uso? 
+The T-conflict rule is a rule that can be applied during CDCL(T) which allows us to switch from the state &lt;V | F | *&gt;  to a state &lt;V | F, C | C&gt; if $C := l_1 \vee l_n$ and $\bar{l_1} , \bar{l_n} \subseteq V$ is not T-satisfiable (The literals which have been either propagated or decided aren&rsquo;t compatible with the original set of clauses)</p>
+</li>
+<li>
+<p>satisfiability criterion for a conjunction of atoms in integer difference logic.  </p>
+</li>
+<li>
+<p>statement of the refutational Completeness Theorem for propositional resolution calculus.  </p>
+<ul>
+<li>In a adequately designed calculus $\mathcal{R}$, a saturated set is inconsistent iff it contains an empty clause. An example of this can be seen through resolution calculus</li>
+</ul>
+</li>
+<li>
+<p>Fourier-Motzkin procedure  </p>
+<ul>
+<li>$x \not &lt; 0 \rightarrow x \geq 0$</li>
+<li>$x \not = 0 \rightarrow x &gt; 0 \wedge x &lt; 0$</li>
+</ul>
+</li>
+<li>
+<p>cosa comporta l’herbrand universe, come cambia tra finite e infinite? </p>
+<ul>
+<li>The herband universe is finite if only constants appear in it, while it&rsquo;s infinite if it contains at least one unary function symbol $f$</li>
+</ul>
+</li>
+<li>
+<p><mark style="background-color: lightblue">the condition for a theory to be stably infinite.  </mark></p>
+<ul>
+<li>A Theory $T$ is stably infinite if every T-satisfiable constraint is satisfiable in an infinite model of $T$</li>
+</ul>
+</li>
+<li>
+<p>reflexivity, symmetry, transitivity axioms for equality; write down also the conguence axioms regarding the symbols of L.  </p>
+</li>
+<li>
+<p>Write down the definition of a Horn clause.</p>
+<ul>
+<li>An Horn clause is a disjunction of literals with at most one positive</li>
+</ul>
+</li>
+<li>
+<p>Formulate the propositional resolution rule.  </p>
+<ul>
+<li>To apply the resolution rule we take 2 clauses which contain the same literal in different polarities, to get the conclusion we simply remove the shared literals and merge the two resulting clauses</li>
+</ul>
+</li>
+<li>
+<p><mark style="background-color: lightblue">Explain Nelson-Oppen combination procedure.  </mark></p>
+<ul>
+<li>The Nelson-Oppen procedure is applied when working with a combination of different theories: Supposing we have as input a finite set of literals $S$ in a language $L_1 \cup L_2$ of $T_1 \cup T_2$, we are able to apply a flattening procedure to decompose $S$ in $S_1 \cup S_2$ where all the literals of $S_n$ belong to $T_n$</li>
+<li>Proposition: Let $T_1 = (\mathcal{L_1, C_1)}$ and  $T_2 = (\mathcal{L_2, C_2)}$ be two <strong>stably infinite</strong> theories and let $S_1, S_2$ be two sets of flat literals in $\mathcal{L_1,L_2}$ respectively containing the set of constants $C$. if for each $c_1,c_2 \in C$  we have that either $c_1 = c_2  \ or \ c_1 \not = c_2$ belong to $S_1 \cap S_2$, then the $T_1$-satisfiability of $S_1$ and the $T_2$-satisfiability of $S_2$ imply the $T_1 \cup T_2$-satisfiability of $S_1 \cup S_2$</li>
+</ul>
+</li>
+<li>
+<p>Formulate the subsumption rule as a simplification rule in the propositional resolution calculus.  </p>
+<ul>
+<li>In propositional resolution the most common rule used for simplification is subsumption: if in the current clause we have both $C$ and $C&rsquo;$ with $C \subseteq C&rsquo;$ , then $C&rsquo;$ Can be eliminated</li>
+</ul>
+</li>
+<li>
+<p><mark style="background-color: lightblue">Give an example of a convex theory </mark></p>
+<ul>
+<li>A theory is convex if the following property holds for any finite set of literals $S$ and for any finite, non empty set of equalities between variable
+<ul>
+<li>if $x_1 = y_1 \vee x_n = y_n$ is a $T$-logical consequence of $S$, then there exists a $j$ such that $x_j = y_j$</li>
+<li>some convex theories are EUF and real linear arithmetic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Formulate the T-conflict rule in the CDCL(T) procedure.  </p>
+<ul>
+<li>The T-conflict rule is a rule that can be applied during CDCL(T) which allows us to switch from the state &lt;V | F | *&gt;  to a state &lt;V | F, C | C&gt; if $C := l_1 \vee l_n$ and $\bar{l_1} , \bar{l_n} \subseteq V$ is not T-satisfiable (The literals which have been either propagated or decided aren&rsquo;t compatible with the original set of clauses)</li>
+</ul>
+</li>
+<li>
+<p>Give an example of a non-convex theory.  
+IDL and Array Theory</p>
+</li>
+<li>
+<p>Explain the T-propagation rule of the CDCL(T) procedure.  
+if we are in the state of &lt;V | F |*&gt; we can pass to the state of $&lt; V, l | F, D \vee l | *&gt;$ if $\neg D \wedge \bar{l}$ is not $T$-satisfiable $V \vDash \neg D$ and $l$ are not defined in $V$</p>
+</li>
+<li>
+<p>Explain an algorithm to check satisfiability of a finite set of literals in  
+integer difference logic (you may use examples to show it, if you like).  </p>
+</li>
+<li>
+<p>what is an unsat core?  
+The unsat core is the minimal possible set of unsatisfiable assertion</p>
+</li>
+<li>
+<p>when a formulae is in prenex form? </p>
+</li>
+<li>
+<p>Write down a ground L-atom whose root symbol is the identity pre- dicate and a ground L-atom whose root symbol is not the identity predicate.  </p>
+</li>
+<li>
+<p>cos’è un indentity predicate </p>
+</li>
+<li>
+<p>what structural transformation does? </p>
+</li>
+<li>
+<p>caratteristiche congruence closure </p>
+</li>
+<li>
+<p><mark style="background-color: lightblue">Church&rsquo;s Theorem </mark>
+There exists no algorithm that decides $T \vDash B$, not even for empty T</p>
+<p>We can always tell whenever something is UNSAT in First Order Logic, but sometimes we may not be able to tell if it&rsquo;s SAT
+we have to look for a &lsquo;semi-algorithm&rsquo; (it may not terminate) to check unsatisfiability of a (finite) set of sentences T</p>
+</li>
+<li>
+<p>Array Theory (3 steps to reduce the system to EUF)</p>
+<ul>
+<li>
+<ol>
+<li>Eliminate $a \not = b$ by introducing a new constant i
+$$a \not = b \rightarrow rd(a,i) \not = rd(b, i)$$</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>For each literal $a = b$ we add the atom
+$$rd(a, i) = rd(b, i)$$
+and for every literal $a = wr(b,i,e)$ we add the atom $rd(a,i) = l$ and a clause $i = j \vee rd(a,i) = rd(b , j)$</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>For every constant $a$ we introduce a unary function $f_a$ and replace $rd(a, i)$ with $f_a(i)$</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="equality-properties">Equality properties</h2>
+<ul>
+<li>reflexivity: $\forall x \ \ x = x$</li>
+<li>Symmetry: $\forall x \forall y (x = y \wedge y = x)$</li>
+<li>Transitivity: $\forall x \forall y \forall z (x=y \wedge y = z \rightarrow x = z)$</li>
+<li>Congruence
+<ul>
+<li>with functions $\forall x_1 \forall x_n \forall y_1 \forall y_n (x_1 = y_1 \wedge x_n = y_n \rightarrow f(x_1, x_n) = f(y_1, y_n)$</li>
+<li>with predicates $\forall x_1 \forall x_n \forall y_1 \forall y_n (x_1 = y_1 \wedge x_n = y_n \rightarrow P(x_1, x_n) = P(y_1, y_n)$</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2025-01-27
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

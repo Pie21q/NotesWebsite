@@ -3,16 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/NotesWebsite/</loc>
-    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/NotesWebsite/computational-logic/questions/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/calculus/</loc>
     <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/calculus/sequences-and-series/</loc>
     <lastmod>2024-12-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/NotesWebsite/computational-logic/</loc>
-    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/NotesWebsite/computational-logic/balls/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
