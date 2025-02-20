@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Temporal Logic &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Temporal Logic</h1>
+    </header>
+    <div class="content__body">
+        <p>All the languages we studied before are static, we need a way to handle time
+In our case we will use $LTL_f$ , a temporal logic with:</p>
+<ul>
+<li>discrete time</li>
+<li>linear evolution</li>
+<li>considering only the future</li>
+<li>finite, unbounded time</li>
+</ul>
+<p>$LTL_f$ is an extension of propositional logic which adds the operators $\bigcirc$ <code>next</code> and $\mathcal{U}$   <code>until</code></p>
+<p>$LTL_f$ formulas re built using the grammar rule stated below
+$\varphi ::= x \ | \ \neg \varphi \ | \ \varphi \wedge \varphi \ | \ \bigcirc \varphi \ | \ \varphi \mathcal{U} \varphi$</p>
+<p>keep in mind that:</p>
+<ul>
+<li>$\bigcirc \varphi$ means $\varphi$ is true in the next point in time</li>
+<li>$\varphi \mathcal{U} \psi$ means $\varphi$ is true until $\psi$ becomes true</li>
+</ul>
+<p>How can we check for satisfiability?</p>
+<p>We can develop a tableaux like structure</p>
+<ul>
+<li>$\varphi$ is always satisfied at the first timepoint</li>
+<li>at the last timepoint, no formula $\bigcirc \psi$ is satisfied</li>
+<li>at a timepoint n, a formula $\psi$ is satisfied if a formula $\neg \psi$ is not satisfied</li>
+<li>$\bigcirc \psi$ is satisfied at a timepoint n iff $\psi$ is satisfied at a timepoint n + 1</li>
+<li>$\psi_1 \mathcal{U} \psi_2$ is satisfied at a timepoint n iff $\psi_2$ or $\psi_1 \wedge \bigcirc \psi_1 \mathcal{U} \psi_2$ is satisfied at timepoint n</li>
+</ul>
+<p>We can divide a formula $\varphi$ into a set of sub formulas $sub(\varphi)$ like this:</p>
+<p>$\varphi := (\bigcirc x)\mathcal{U} \neg y$</p>
+<p>sub($\varphi$):</p>
+<ul>
+<li>$(\bigcirc x)\mathcal{U} \neg y$ $</li>
+<li>$\bigcirc x$</li>
+<li>$x$</li>
+<li>$\neg y$</li>
+<li>$y$</li>
+</ul>
+<p>we can also describe a closure of this set</p>
+<ul>
+<li>$\neg((\bigcirc x)\mathcal{U} \neg y)$ $</li>
+<li>$\neg \bigcirc x$</li>
+<li>$\neg x$</li>
+<li>$\bigcirc((\bigcirc x)\mathcal{U} \neg y)$</li>
+<li>$\neg \bigcirc((\bigcirc x)\mathcal{U} \neg y)$</li>
+</ul>
+<p>A type is a maximally consistent set of csub, and every time defines exactly one valuation</p>
+<h2 id="type-graphs">Type Graphs</h2>
+<p>The type graph $G_\varphi$ is the directed graph of $\varphi$ such that:</p>
+<ul>
+<li>the nodes of $G_\varphi$ are the types of $\varphi$</li>
+<li>there is an edge from $\mathcal{T_1}$ to $\mathcal{T_2}$ iff for very $\bigcirc \psi \in$ csub$(\varphi)$</li>
+</ul>
+<p>The paths in the graph describe a valid behaviour in the temporal model, to describe a temporal model we need 2 more conditions</p>
+<ul>
+<li>the path should start with a type containing $\varphi$</li>
+<li>the path should end without a $\bigcirc$ hanging</li>
+</ul>
+<p>A type $\mathcal{T}$ can be</p>
+<ul>
+<li>initial if $\varphi \in \mathcal{T}$ (it needs to have the original formula)</li>
+<li>final if it contains no formula of the form $\bigcirc \psi$</li>
+</ul>
+<p>An $LTL_f$ is satisfiable iff there is a path from an initial type to a final type in $G_\varphi$</p>
+<p>$LTL_f$ can be expanded with the logic $\mathcal{ALC}_{LTL_f}$ , by adding evolving interpretations
+A temporal interpretation becomes then a finite sequence of $\mathcal{ALC}$ interpretations</p>
+<h2 id="exercises">Exercises</h2>
+<ul>
+<li>To compute the csub we divide the formula into sub formulas then add the negation, + for every until we add the next of the until and the negation of it
+<ul>
+<li>$\varphi := \bigcirc x, \ csub(\varphi) = {\bigcirc x, \neg \bigcirc x, x, \neg x }$</li>
+</ul>
+</li>
+<li>to get a type we need to choose for every sub formula either the positive or negated one, making sure to keep consistency
+<ul>
+<li>
+<p>$\tau_1 = { \bigcirc x, x }$</p>
+</li>
+<li>
+<p>An initial type must contain the original formula</p>
+</li>
+<li>
+<p>A final type mustn&rsquo;t contain any formula of the type $\bigcirc x$ (there is no next point in time)</p>
+</li>
+</ul>
+</li>
+<li>To check if 2 types are connected through an edge we must check if the $\bigcirc x$ in $\tau_1$ are respected in $\tau_2$
+<ul>
+<li>$\tau_1 = {\bigcirc x, \neg x}$</li>
+<li>$\tau_2 = {\bigcirc x, x}$  The next statement is respected as in the next timeframe $x$ is positive $\rightarrow$ the 2 types are connected through an edge</li>
+</ul>
+</li>
+</ul>
+<p>a formula $\varphi$ is satisfiable if there is an edge from an initial type to a final one, a formula $\neg \varphi$ has the same graph as $\varphi$ but all the types that weren&rsquo;t initial become initial, while the final types stay the same</p>
+<p>$\Omega \mathcal{U} \Gamma$</p>
+<ul>
+<li>Omega has to be true until $\Gamma$ is true</li>
+</ul>
+<p>$\lozenge x := \top \mathcal{U} x$ eventually x is going to be true
+$\square x := \neg \lozenge \neg x$ always x</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2025-02-20
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

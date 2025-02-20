@@ -6,8 +6,36 @@
     <description>Recent content in KR on My Notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/NotesWebsite/kr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ALC</title>
+      <link>http://localhost:1313/NotesWebsite/kr/alc/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/alc/</guid>
+      <description>&lt;p&gt;In $\mathcal{EL}^\bot$ negation can only be partially achieved&#xA;The construction $A \sqcap B \sqsubseteq \bot$ Means that no element a can belong to B&lt;/p&gt;&#xA;&lt;p&gt;$Mortal \sqcap Immortal \sqsubseteq \bot$ Tells us no object can be both Mortal and Immortal at the same time, but we have no way to express an object which is neither Mortal or Immortal, also how can we express the fact that if an object is not Mortal, then it has to be immortal $\neg Mortal \sqsubseteq Immortal$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EL</title>
+      <link>http://localhost:1313/NotesWebsite/kr/el/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/el/</guid>
+      <description>&lt;h1 id=&#34;mathcalel&#34;&gt;$\mathcal{EL}$&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;An $\mathcal{EL}$ GCI is an expression of the form $C \sqsubseteq D$ with $C \ and \ D$ being $\mathcal{EL}$ concepts&lt;/li&gt;&#xA;&lt;li&gt;A $\mathcal{EL}$ TBox is a finite set of GCI&amp;rsquo;s&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;A Concept $C$ is satisfiable iff $C \not \sqsubseteq \bot$&lt;/p&gt;&#xA;&lt;p&gt;In the presence of TBoxes we cannot use homomorphism to check for subsumption $\rightarrow$ GCI&amp;rsquo;s add objects to the concept tree and we would end up with infinite constructions&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probabilistic Logic</title>
+      <link>http://localhost:1313/NotesWebsite/kr/probabilistic-logic-brotherman/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/probabilistic-logic-brotherman/</guid>
+      <description>&lt;p&gt;The previous KR languages we studied all assume knowledge to be perfect&#xA;no more&lt;/p&gt;&#xA;&lt;p&gt;probabilistic logic satisfies some properties&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$P(\bot) = 0$&lt;/li&gt;&#xA;&lt;li&gt;$P(\neg \varphi) = 1 - \varphi$&lt;/li&gt;&#xA;&lt;li&gt;$P(\varphi \vee \psi) = P(\varphi) + P(\psi) - P(\varphi \wedge \psi)$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Probabilistic Logics are not &lt;strong&gt;Truth functional&lt;/strong&gt;&#xA;Knowing $P(\varphi)$ and $P(\psi)$ is not enough to find out $P(\varphi \wedge \psi)$ or $P(\varphi \vee \psi)$&lt;/p&gt;&#xA;&lt;p&gt;There exists 2 types of uncertainty&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Type I (Statistical)&#xA;75% of BAI students are Italian&#xA;(probability of a BAI student to be Italian is 75%)&lt;/li&gt;&#xA;&lt;li&gt;Type II (subjective)&#xA;the probability of Rafael having a daughter is 40%&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Clauses, facts, and rules&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Temporal Logic</title>
+      <link>http://localhost:1313/NotesWebsite/kr/temporal-logic-brotherman/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/temporal-logic-brotherman/</guid>
+      <description>&lt;p&gt;All the languages we studied before are static, we need a way to handle time&#xA;In our case we will use $LTL_f$ , a temporal logic with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;discrete time&lt;/li&gt;&#xA;&lt;li&gt;linear evolution&lt;/li&gt;&#xA;&lt;li&gt;considering only the future&lt;/li&gt;&#xA;&lt;li&gt;finite, unbounded time&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;$LTL_f$ is an extension of propositional logic which adds the operators $\bigcirc$ &lt;code&gt;next&lt;/code&gt; and $\mathcal{U}$   &lt;code&gt;until&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;$LTL_f$ formulas re built using the grammar rule stated below&#xA;$\varphi ::= x \ | \ \neg \varphi \ | \ \varphi \wedge \varphi \ | \ \bigcirc \varphi \ | \ \varphi \mathcal{U} \varphi$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>From Concept to knowledge</title>
       <link>http://localhost:1313/NotesWebsite/kr/from-concept-to-knowledge-in-el/</link>
@@ -91,6 +119,13 @@
       <pubDate>Sat, 05 Oct 2024 12:08:51 +0200</pubDate>
       <guid>http://localhost:1313/NotesWebsite/kr/logic-and-symbolic-ai/</guid>
       <description>&lt;h1 id=&#34;intelligence&#34;&gt;Intelligence&lt;/h1&gt;&#xA;&lt;p&gt;AI deals with machines showing intelligent traits, isn&amp;rsquo;t equivalent to humane cognitive attributes&#xA;Humans work on 2 different thought processes; ==system 1 (reflexes, fast and intuitive) and system 2 (Used in thought, slow and more logical, takes effort and time)&lt;/p&gt;&#xA;&lt;p&gt;System 1 is useful for simple task but can be easily fooled (Pareidolia) it&amp;rsquo;s also hard wired and hard to modify it (In AI creation and modification of it can be very expensive as it needs time and repetition to build a strong muscle memory)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/NotesWebsite/kr/predicate-logic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NotesWebsite/kr/predicate-logic/</guid>
+      <description>&lt;p&gt;a predicate rule is a predicate clause of the kind&#xA;$P(\bar{t}) \leftarrow Q_1(\bar{t_1}), Q_N(\bar{t_n})$&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;All variables in $P(\bar{t})$ must appear in the body&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

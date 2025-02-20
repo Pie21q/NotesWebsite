@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>KR &ndash; My Notes</title>
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>Probabilistic Logic &ndash; My Notes</title>
 <meta name="description" content="Check out my socials">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,9 +27,24 @@
 
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/NotesWebsite/kr/index.xml" title="My Notes">
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
 </head>
 
     <body>
@@ -58,65 +73,63 @@
 </header>
 
             <section class="page__body">
-    <h1 id="kr">KR</h1>
+    <header class="content__header">
+        <h1>Probabilistic Logic</h1>
+    </header>
+    <div class="content__body">
+        <p>The previous KR languages we studied all assume knowledge to be perfect
+no more</p>
+<p>probabilistic logic satisfies some properties</p>
+<ul>
+<li>$P(\bot) = 0$</li>
+<li>$P(\neg \varphi) = 1 - \varphi$</li>
+<li>$P(\varphi \vee \psi) = P(\varphi) + P(\psi) - P(\varphi \wedge \psi)$</li>
+</ul>
+<p>Probabilistic Logics are not <strong>Truth functional</strong>
+Knowing $P(\varphi)$ and $P(\psi)$ is not enough to find out $P(\varphi \wedge \psi)$ or $P(\varphi \vee \psi)$</p>
+<p>There exists 2 types of uncertainty</p>
+<ul>
+<li>Type I (Statistical)
+75% of BAI students are Italian
+(probability of a BAI student to be Italian is 75%)</li>
+<li>Type II (subjective)
+the probability of Rafael having a daughter is 40%</li>
+</ul>
+<p>Clauses, facts, and rules</p>
+<ul>
+<li>A probabilistic horn clause is an expression $p::\gamma$ where
+<ul>
+<li>$p \in [0,1]$</li>
+<li>$\gamma$ is an horn clause</li>
+<li>A probabilistic fact is an expression of the kind $p::x \leftarrow$</li>
+<li>A probabilistic rule is an expression of the kind $p::x \leftarrow y_1,&hellip;,y_n$</li>
+</ul>
+</li>
+</ul>
+<p>A probabilistic Knowledge Base is a finite set $K$ of</p>
+<ul>
+<li>classical rules and facts $K_C$</li>
+<li>probabilistic rules and facts $K_P$</li>
+</ul>
+<p>we can use $p::\gamma$ to express that $p$ is the probability of $\gamma$ , meaning we have 2 scenarios</p>
+<ul>
+<li>One where $\gamma$ holds</li>
+<li>One where $\gamma$ doesn&rsquo;t hold</li>
+</ul>
+<p>We consider them both <strong>Multiple Worlds Semantics</strong></p>
+<p>What if we have more than one probabilistic clause</p>
+<ul>
+<li>We also need more worlds</li>
+</ul>
+<p>2 ways of dealing with multiple probabilities</p>
+<ul>
+<li>Assume independency (Multiply the joint probabilities for each world)</li>
+<li>Consider entropy and use the distribution that maximizes entropy</li>
+</ul>
+<p>The probability of a consequence $\alpha$ is the sum of the probabilities of all the worlds that entail $\alpha$</p>
 
-    
-
-    <ul>
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/alc/">ALC</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/el/">EL</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/probabilistic-logic-brotherman/">Probabilistic Logic</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/temporal-logic-brotherman/">Temporal Logic</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/from-concept-to-knowledge-in-el/">From Concept to knowledge</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/new-kr-language/">New KR language</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/representing-individuals-in-alc/">Representing Individuals in ALC</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/type-of-knowledge/">Type of Knowledge</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/extension-of-predicate-rules/">Extension of predicate rules</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/inconsistent-kbs/">Inconsistent KBs</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/representing-knowledge-as-rules/">Representing Knowledge as Rules</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/dealing-with-objects/">Dealing with objects</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/boolean-algebra-and-propositional-logic/">Boolean Algebra and Propositional Logic</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/history-of-kr/">History of KR</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/logic/">Logic</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/logic-and-symbolic-ai/">Logic and Symbolic AI</a></li>
-
-    
-        <li><a href="http://localhost:1313/NotesWebsite/kr/predicate-logic/"></a></li>
-
-    
-    </ul>
-
+    </div>
+    <footer class="content__footer"></footer>
 
             </section>
 
@@ -148,6 +161,14 @@
 </div>
                 <hr>
                 <div class="aside__content">
+    
+    
+        <p>
+            
+            2025-02-20
+        </p>
+    
+
     
 
                 </div>

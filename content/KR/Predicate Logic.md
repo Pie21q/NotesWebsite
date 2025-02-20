@@ -1,0 +1,3 @@
+a predicate rule is a predicate clause of the kind
+$P(\bar{t}) \leftarrow Q_1(\bar{t_1}), Q_N(\bar{t_n})$ 
+- All variables in $P(\bar{t})$ must appear in the body

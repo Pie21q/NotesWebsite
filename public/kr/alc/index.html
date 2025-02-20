@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/NotesWebsite/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NotesWebsite/livereload" data-no-instant defer></script><title>ALC &ndash; My Notes</title>
+<meta name="description" content="Check out my socials">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/NotesWebsite/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/NotesWebsite/" class="page__logo-inner">My Notes</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/calculus/" title="Calculus">Calculus</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computational-logic/" title="Computational Logic">Computational Logic</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/computer-programming/" title="Computer Programming">Computer Programming</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/NotesWebsite/kr/" title="KR">KR</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/NotesWebsite/physics/" title="Physics">Physics</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>ALC</h1>
+    </header>
+    <div class="content__body">
+        <p>In $\mathcal{EL}^\bot$ negation can only be partially achieved
+The construction $A \sqcap B \sqsubseteq \bot$ Means that no element a can belong to B</p>
+<p>$Mortal \sqcap Immortal \sqsubseteq \bot$ Tells us no object can be both Mortal and Immortal at the same time, but we have no way to express an object which is neither Mortal or Immortal, also how can we express the fact that if an object is not Mortal, then it has to be immortal $\neg Mortal \sqsubseteq Immortal$</p>
+<p>This is not allowed in $\mathcal{EL}^\bot \rightarrow$ we need a new language $\rightarrow \mathcal{ALC}$</p>
+<p>$\mathcal{ALC}$ is an extension of $\mathcal{EL}^\bot$ which allows support for negation
+$C ::= A \ | \ \top \ | \ C \sqcap C \ | \ \exists r.C \ | \ \neg C$</p>
+<p>we also add $\forall$ to our language
+$\forall r.C := \neg(\exists r.\neg C)$</p>
+<p>Every $\mathcal{ALC}$ concept can be rewritten in NNF, considering the same rules we already know from Computational Logic (No implications this time :] )</p>
+<ul>
+<li>Also in case of quantifiers
+<ul>
+<li>$\neg (\forall r.C) := \exists r.\neg C$</li>
+<li>$\neg (\exists r.C) := \forall r.\neg C$</li>
+</ul>
+</li>
+</ul>
+<p>To check for consistency of an object $C$ in $\mathcal{ALC}$ we want to build an object which belongs to it through a Tableaux algorithm</p>
+<ul>
+<li>we start with initialization $\rightarrow \ assert \ C(a)$</li>
+<li>We then proceed with decomposition, applying the tableaux rules
+<ul>
+<li>$\sqcap$ | if $C \sqcap D \in \mathcal{A}$  then add $C(x), D(x)$ to $\mathcal{A}$</li>
+<li>$\sqcup$ | if $C \sqcup D \in \mathcal{A}$  then add either $C(x) \ or \ D(x)$ to $\mathcal{A}$</li>
+<li>$\exists$ | if $\exists r.C(x) \in \mathcal{A}$  then add $r(x, y), C(y)$ to $\mathcal{A}$</li>
+<li>$\forall$ | if $r(x, y), \forall r.C(x) \in \mathcal{A}$  then add $C(y)$ to $\mathcal{A}$</li>
+</ul>
+</li>
+</ul>
+<p>There is no rule for handling negation $\rightarrow$ it&rsquo;s the last item in the decomposition and it plays a role in deciding the existence of a satisfying interpretation</p>
+<p>a set of assertions $\mathcal{A}$ can be:</p>
+<ul>
+<li>saturated, if no rule is applicable to it</li>
+<li>closed, if ${A(a), \neg A(a) } \subseteq \mathcal{A}$ for some $A \in N_C$</li>
+<li>open, if it&rsquo;s not closed</li>
+</ul>
+<p>A concept $C$ is satisfiable if the tableaux algorithm yields a saturated and open set of assertions</p>
+<h2 id="what-if-were-working-with-tboxes">What if we&rsquo;re working with TBoxes</h2>
+<p>We add a new rule to the tableaux
+$\sqsubseteq$ | if $C \sqsubseteq D \in \mathcal{T}$ and  x appears in $\mathcal{A}$, add $\neg C \sqcup D(x)$ to $\mathcal{A}$
+We first have to transform our TBox to NNF</p>
+<p>The new rule we added doesn&rsquo;t add simpler concepts $\rightarrow$ the process goes on indefinitely</p>
+<p>all the nodes are the same, once we recognize the pattern w edo not need further enumeration</p>
+<h2 id="adding-individuals-to-mathcalalc">Adding individuals to $\mathcal{ALC}$</h2>
+<h3 id="example">Example</h3>
+<p>We wanna make sure that if <code>HasChild(rafael, joe)</code> , then <code>rafael</code> is a parent
+We need to add this to the Knowledge Base $\rightarrow$ these informations form the assertional Knowledge of the domain</p>
+<p>considering a set $N_I$ of individual names
+an assertion is an expression of the form</p>
+<ul>
+<li>$C(a)$ where $a \in N_I$ and $C$ is an $\mathcal{ALC}$ concept</li>
+<li>$r(a, b)$ where $a, b \in N_I$ and $r \in N_r$
+An ABox is a finite set of assertions
+A Knowledge Base is a pair $\mathcal{K} = (\mathcal{T,A})$</li>
+</ul>
+<p>A KB is consistent iff it has a model</p>
+<p>To check for this we can apply our tableaux algorithm to the KB</p>
+<ol>
+<li><strong>pre-completion</strong>: we apply all non-generating rules ($\not \exists$) until saturation</li>
+<li><strong>expansion</strong>: we apply tableaux rules to each pre-completed individual</li>
+</ol>
+<p>Our KB is consistent if the tableaux algorithm produces an open and saturated ABox</p>
+<p>When successful, the tableaux algorithm generates a forest-like model</p>
+<p>To check if a subsumption holds we take the right part, invert it and move it to the left with a $\sqcap$, we then try and build a model to test for satisfiability</p>
+<ul>
+<li>Unsat, Holds</li>
+<li>Sat, doens&rsquo;t Hold</li>
+</ul>
+<h2 id="exercises">Exercises</h2>
+<ul>
+<li>To check for satisfiability we look for $\bot$ , then for $\sqcup$ and try to build a model even with $\bot$ present</li>
+<li>To check for TBox consistency we first transform the GCI&rsquo;s in normal form, then we try to construct a model</li>
+<li>To check if a concept $\psi$ is satisfiable with respect to an $\mathcal{ALC}$ TBox we simply add it as if it was a formula $\top \sqsubseteq \psi$ , then check for SAT</li>
+<li>To check if a subsumption of the kind $\phi \sqsubseteq \gamma$ holds with respect to an $\mathcal{ALC}$ TBox we transform it into $\phi \sqcap \neg \gamma$ and check for SAT</li>
+</ul>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+    
+<h1 class="about__title">About Me</h1>
+<p class="about__description">Check out my socials</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/Pie21q" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:pietro.riccardisirtor01@universitadipavia.it" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.instagram.com/pane_caciotta_e_maglionese/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2025-02-20
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer">
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
